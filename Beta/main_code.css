@@ -2575,7 +2575,7 @@
     }
 }
 
-#profiles_show .profile-head .c-brief header::before {
+#profiles_show .head.misc::before {
     content: "Через 5 дней! стиль будит удален ☺";
     pointer-events: none;
     display: block;
