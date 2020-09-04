@@ -2587,4 +2587,11 @@
     color: #ffffff;
     font-weight: bold;
     z-index: 999;
+    bottom: 15rem;
+    padding: 10px;
+    background: #2632389e;
+    backdrop-filter: blur(5px);
+    width: 600px;
+    border-radius: .3rem;
+    text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%);
 }
