@@ -1,4 +1,4 @@
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 180px) {
   #profiles_show .Blok-1 {
     display: block;
     padding: 1% 0 0 0;
@@ -17,7 +17,7 @@
     padding: 0.35rem;
     max-width: none;
     background: none;
-    width: calc(100% / 3);
+    width: calc(100% / 1);
   }
   #profiles_show .Person-0 .b-catalog_entry .cover .image-decor .image-cutter {
     max-height: 1px !important;
@@ -228,21 +228,31 @@
 #profiles_show .Person-0 a[href*="624-seras-victoria"] .image-decor::after {content: "19 лет, на момент обращения 49, Вампир";
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 240px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 4);
+    width: calc(100% / 2);
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 380px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 5);
+    width: calc(100% / 3);
   }
   #profiles_show .Blok-1 {
     white-space: normal;
     overflow-y: inherit;
   }
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 500px) {
+  #profiles_show .Person-0 .c-column {
+    width: calc(100% / 4);
+  }
+}
+@media screen and (min-width: 768px) {
+  #profiles_show .Person-0 .c-column {
+    width: calc(100% / 5);
+  }
+}
+@media screen and (min-width: 900px) {
   #profiles_show .Person-0 .c-column {
     width: calc(100% / 6);
   }
