@@ -22,8 +22,9 @@
   }
   #profiles_show .Animes_Mangas .c-column {
     display: inline-block;
+    width: calc(100% / 1 - 1 * 1.01%);
     max-width: none;
-    margin: 0rem 0.5% 0.65rem 0.5% !important;
+    margin: 0 .5% .25rem .5% !important;
     clear: none !important;
     float: none;
     z-index: 3;
@@ -31,7 +32,7 @@
     box-shadow: none;
     border-radius: 0.5rem;
     padding: 0;
-    width: calc(100% / 1 - 1 * 1.01%);
+    vertical-align: top;
   }
   #profiles_show .Animes_Mangas .b-catalog_entry .cover .title {
     position: absolute;
