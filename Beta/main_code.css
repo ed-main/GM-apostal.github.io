@@ -2574,3 +2574,17 @@
         margin: 10px 0.65% 14px 0.65%; /*Персонажи в ленте-v2*/
     }
 }
+
+#profiles_show head misc::before {
+    content: "Через 5 дней! стиль будит удален ☺";
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 999;
+}
