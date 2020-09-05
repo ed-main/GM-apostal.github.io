@@ -2576,7 +2576,7 @@
 }
 
 #profiles_show .head.misc::before {
-    content: "Через 5 дней! стиль будит удален ☺";
+    content: "через 4 дня! стиль будит удален ☺";
     pointer-events: none;
     display: block;
     position: absolute;
