@@ -1,0 +1,184 @@
+/* Карусель */
+.u-carousel {
+   display: flex;
+   position: relative;
+   max-width: 1000px;
+   width: calc(100% / 3);
+   margin: auto;
+   float: left;
+}
+/* Изображения */
+.u-carousel .u-carousel_images {
+   position: relative;
+   padding-top: 52%;
+   width: 100%;
+   overflow: hidden;
+   user-select: none;
+   border-radius: 0.25rem;
+   border: 0.25rem solid rgba(var(--block-color), 0.3);
+   margin: 0.5rem 0.5rem 0.8rem 0.5rem;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+/* Контроль над самой картинкой */
+.u-carousel .b-image.b-poster img {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   max-width: 100% !important;
+   transform: none;
+   filter: none;
+   border-radius: 0;
+   transition: none !important;
+   box-shadow: none !important;
+   object-fit: cover;
+   object-position: 50% 50%;
+}
+
+.u-carousel .u-carousel_images > div > .b-image,
+.u-carousel .u-carousel_images > div > .b-poster {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   transform: translateX(-100%);
+}
+
+.u-carousel .u-carousel_images > div > .b-image,
+.u-carousel .u-carousel_images > div > .b-poster {
+   transform: translate(12px, 50%);
+   opacity: 0;
+} /*transform: translateX(-100%);*/
+
+.u-carousel .u-carousel_images > .active > .b-image,
+.u-carousel .u-carousel_images > .active > .b-poster {
+   /*position: static;*/
+   transform: translateX(0);
+   opacity: 1;
+}
+
+.u-carousel .u-carousel_images > .active ~ div > .b-image,
+.u-carousel .u-carousel_images > .active ~ div > .b-poster {
+   transform: translateX(100%);
+}
+
+.u-carousel.animated .u-carousel_images div > .b-image,
+.u-carousel.animated .u-carousel_images div > .b-poster {
+   transition: 0.7s linear;
+   will-change: transform;
+}
+
+/* Переключатели */
+.u-carousel .u-carousel_images > div::before,
+.u-carousel .u-carousel_images > div::after {
+   content: "";
+   display: none;
+   justify-content: flex-end;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 4.25rem;
+   font-size: 32px;
+   opacity: 1;
+   z-index: 1;
+   cursor: pointer;
+}
+.u-carousel .u-carousel_images .b-image:hover img {
+   opacity: 1;
+}
+.u-carousel .u-carousel_images > div::after {
+   right: 0;
+}
+
+.u-carousel .u-carousel_images > div:not(.active):first-child::after,
+.u-carousel .u-carousel_images > .active + div::after,
+.u-carousel .u-carousel_images > div::before,
+.u-carousel .u-carousel_images > .active:first-child ~ div:last-child::before {
+   display: flex;
+}
+
+.u-carousel .u-carousel_images > br,
+.u-carousel .u-carousel_images > div > br,
+.u-carousel .u-carousel_images .b-image .marker,
+.u-carousel .u-carousel_images > .active::before,
+.u-carousel .u-carousel_images > .active ~ div::before {
+   display: none;
+}
+
+/* Псевдо-переключатели */
+.u-carousel .u-carousel_images::before,
+.u-carousel .u-carousel_images::after {
+   content: "";
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 4.0625rem;
+   padding: 1.25rem;
+   background: linear-gradient(90deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 0%));
+   color: rgb(28 28 28 / 95%);
+   font-family: "shikimori";
+   font-size: 2.8125rem;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-feature-settings: "liga";
+   font-feature-settings: "liga";
+   opacity: 0;
+   transition: opacity 0.16s ease-in-out;
+   pointer-events: none;
+   z-index: 1;
+   font-weight: bold;
+}
+.u-carousel .u-carousel_images::after {
+   content: "";
+   justify-content: flex-end;
+   right: 0;
+   background: linear-gradient(270deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 0%));
+}
+.u-carousel .u-carousel_images:hover::before,
+.u-carousel .u-carousel_images:hover::after {
+   opacity: 1;
+}
+
+/* Счётчик */
+.u-carousel.counter {
+   counter-reset: carousel carousel-current;
+}
+.u-carousel.counter .u-carousel_images > div {
+   counter-increment: carousel carousel-current;
+}
+.u-carousel.counter .u-carousel_images > .active ~ div {
+   counter-increment: carousel carousel-current 0;
+}
+
+.u-carousel.counter::after {
+   content: counter(carousel-current) " из " counter(carousel);
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 2em;
+   padding: 0.36em 1em;
+   background: rgb(0 0 0 / 40%);
+   border-radius: 5px;
+   color: #eee;
+   backface-visibility: hidden;
+   pointer-events: none;
+   z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+   .u-carousel {
+      width: calc(100% / 2);
+   }
+}
+@media screen and (max-width: 600px) {
+   .u-carousel {
+      width: calc(100% / 1);
+   }
+}
