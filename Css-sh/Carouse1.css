@@ -29,7 +29,7 @@
    transition: none !important;
    box-shadow: none !important;
    object-fit: cover;
-   object-position: 50% 65%;
+   object-position: 50% 50%;
 }
 
 .u-carousel .u-carousel_images > div > .b-image,
