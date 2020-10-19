@@ -126,12 +126,10 @@
 .qa03 {
     background: url("//i.ibb.co/ZGcbTpy/3d-cube-transparent-png-47035-free-icons-and-png-backgrounds-3d-cube-png-1246-1113.png") no-repeat 50% 50% / 100%;
 }
-.qa01:before {
-    content: "Css Club";
+.qa04 {
+    background: url("//i.ibb.co/d07zPSL/qH.png") no-repeat 50% 50% / 104%;
 }
-.qa02:before {
-    content: "Edesign / shikimori";
-}
-.qa03:before {
-    content: "Сборщик";
-}
+.qa01:before {content: "Css Club";}
+.qa02:before {content: "Edesign / shikimori";}
+.qa03:before {content: "Сборщик";}
+.qa04:before {content: "обновление кеша";}
