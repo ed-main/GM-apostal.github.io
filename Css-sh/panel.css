@@ -68,7 +68,7 @@
  .qa-panel:hover .b-link {
     opacity: 1;
     transition: .3s all;
-    height: 4.125rem;
+    height: 3.625rem;
 }
 .qa-link {
     width: 45px;
