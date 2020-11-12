@@ -274,6 +274,6 @@
 }
 @media screen and (min-width: 1678px) {
   #profiles_show .Person-0 .c-column {
-    width: calc(100% / 10);
+    width: calc(100% / 11);
   }
 }
