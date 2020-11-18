@@ -229,7 +229,7 @@
 .cc-favourites > .c-anime:hover .cover .image-decor::before,
 .cc-favourites > .c-manga:hover .cover .image-decor::before {
   opacity: 1;
-  background: rgb(20 38 61 / 77%);
+  background: rgba(var(--block-color), 0.6);
 }
 .cc-favourites > .c-anime .cover .image-cutter::before,
 .cc-favourites > .c-manga .cover .image-cutter::before {
