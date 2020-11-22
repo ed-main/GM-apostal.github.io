@@ -1,7 +1,7 @@
 @media screen and (min-width: 180px) {
   #profiles_show .Blok-1 {
     display: block;
-    padding: 1% 0 0 0;
+    padding: 0;
     white-space: nowrap;
     overflow-y: hidden;
   }
@@ -99,9 +99,9 @@
 #profiles_show .Person-0 .image-cutter::before,
 #profiles_show .Person-0 .cover .image-decor::after {
   position: absolute;
-  display: grid;
+  display: flex;
   content: "";
- text-shadow: 1px 0 2px rgb(0 0 0 / 78%), -1px 0 2px rgb(0 0 0 / 78%), 0 1px 2px rgb(0 0 0 / 78%), 0 -1px 2px rgb(0 0 0 / 78%), 1px 0 2px rgb(0 0 0 / 78%), -1px 0 2px rgb(0 0 0 / 78%), 0 1px 2px rgb(0 0 0 / 78%), 0 -1px 2px rgb(0 0 0 / 78%);
+ text-shadow:1px 0 2px #000000c7,-1px 0 2px #000000c7,0 1px 2px #000000c7,0 -1px 2px #000000c7,1px 0 2px #000000c7,-1px 0 2px #000000c7,0 1px 2px #000000c7,0 -1px 2px #000000c7;
   opacity: 0;
   line-height: 1.45;
   z-index: 20;
@@ -113,56 +113,56 @@
 #profiles_show .Person-0 .image-cutter::before {font-size: 13px; color: #bbb; top: 0.5rem; left: 0.5rem;}
 #profiles_show .Person-0 .c-column:hover .image-cutter::before {opacity: 1;}
 
-#profiles_show .Person-0 a[href*="118765-ram"] .image-cutter::before {content: "90 баллов";}
-#profiles_show .Person-0 a[href*="118763-rem"] .image-cutter::before {content: "93 балла";}
-#profiles_show .Person-0 a[href*="43280-inori-"] .image-cutter::before {content: "70 баллов";}
-#profiles_show .Person-0 a[href*="82525-shiro"] .image-cutter::before {content: "90 баллов";}
-#profiles_show .Person-0 a[href*="67067-yukino-"] .image-cutter::before {content: "65 баллов";}
-#profiles_show .Person-0 a[href*="34470-kurisu-"] .image-cutter::before {content: "60 баллов";}
-#profiles_show .Person-0 a[href*="136-louise-fran-"] .image-cutter::before {content: "77 баллов";}
-#profiles_show .Person-0 a[href*="69133-liza-lizu"] .image-cutter::before {content: "78 баллов";}
-#profiles_show .Person-0 a[href*="50389-rias-"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="30273-yuuko-kanoe"] .image-cutter::before {content: "79 баллов";}
-#profiles_show .Person-0 a[href*="4963-yuno-gasai"] .image-cutter::before {content: "58 баллов";}
-#profiles_show .Person-0 a[href*="94-asuka-langley-"] .image-cutter::before {content: "90 баллов";}
-#profiles_show .Person-0 a[href*="160603-miku-nakano"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="161472-nino-nakano"] .image-cutter::before {content: "85 баллов";}
-#profiles_show .Person-0 a[href*="87277-touka-"] .image-cutter::before {content: "73 балла";}
-#profiles_show .Person-0 a[href*="61371-mashiro-"] .image-cutter::before {content: "86 баллов";}
-#profiles_show .Person-0 a[href*="7373-holo"] .image-cutter::before {content: "76 баллов";}
-#profiles_show .Person-0 a[href*="67069-yui-yuigahama"] .image-cutter::before {content: "88 баллов";}
-#profiles_show .Person-0 a[href*="40450-msyu"] .image-cutter::before {content: "68 баллов";}
-#profiles_show .Person-0 a[href*="88577-fremy-"] .image-cutter::before {content: "84 балла";}
-#profiles_show .Person-0 a[href*="119413-yumeko-"] .image-cutter::before {content: "54 балла";}
-#profiles_show .Person-0 a[href*="23602-shinobu-"] .image-cutter::before {content: "77 баллов";}
-#profiles_show .Person-0 a[href*="12064-taiga-aisaka"] .image-cutter::before {content: "89 баллов";}
-#profiles_show .Person-0 a[href*="13701-mikoto-misaka"] .image-cutter::before {content: "90 баллов";}
-#profiles_show .Person-0 a[href*="69411-kaori-miyazono"] .image-cutter::before {content: "75 баллов";}
-#profiles_show .Person-0 a[href*="43282-tsugumi"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="144487-ha-kyung-"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="117225-megumin"] .image-cutter::before {content: "90 баллов";}
-#profiles_show .Person-0 a[href*="89339-alice-nakiri"] .image-cutter::before {content: "85 баллов";}
-#profiles_show .Person-0 a[href*="40881-mikasa-"] .image-cutter::before {content: "55 баллов";}
-#profiles_show .Person-0 a[href*="118739-mai-sakurajima"] .image-cutter::before {content: "85 баллов";}
-#profiles_show .Person-0 a[href*="99661-rory-mercury"] .image-cutter::before {content: "76 баллов";}
-#profiles_show .Person-0 a[href*="9719-juvia-lockser"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="166026-nero"] .image-cutter::before {content: "70 баллов";}
-#profiles_show .Person-0 a[href*="119321-momo-yaoyorozu"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="22037-hitagi-senjougahara"] .image-cutter::before {content: "85 баллов";}
-#profiles_show .Person-0 a[href*="161954-kyouryuu-no-"] .image-cutter::before {content: "60 баллов";}
-#profiles_show .Person-0 a[href*="143196-ai-hayasaka"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="41374-subaru-konoe"] .image-cutter::before {content: "87 баллов";}
-#profiles_show .Person-0 a[href*="75284-erina-nakiri"] .image-cutter::before {content: "83 балла";}
-#profiles_show .Person-0 a[href*="13390-haruko-amaya"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="55133-eru-chitanda"] .image-cutter::before {content: "86 баллов";}
-#profiles_show .Person-0 a[href*="6043-saeko-busujima"] .image-cutter::before {content: "76 баллов";}
-#profiles_show .Person-0 a[href*="z37698-kobato-hasegawa"] .image-cutter::before {content: "94 балла";}
-#profiles_show .Person-0 a[href*="31418-nyaruko"] .image-cutter::before {content: "70 баллов";}
-#profiles_show .Person-0 a[href*="z52723-kosaki-onodera"] .image-cutter::before {content: "85 баллов";}
-#profiles_show .Person-0 a[href*="20476-charlotte-hazelrink"] .image-cutter::before {content: "80 баллов";}
-#profiles_show .Person-0 a[href*="5190-mirajane-strauss"] .image-cutter::before {content: "88 баллов";}
-#profiles_show .Person-0 a[href*="48993-masuzu-natsukawa"] .image-cutter::before {content: "70 баллов";}
-#profiles_show .Person-0 a[href*="624-seras-victoria"] .image-cutter::before {content: "78 баллов";}
+#profiles_show .Person-0 [id="118765"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 [id="118763"] .image-cutter::before {content: "93 балла";}
+#profiles_show .Person-0 [id="43280"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 [id="82525"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 [id="67067"] .image-cutter::before {content: "65 баллов";}
+#profiles_show .Person-0 [id="34470"] .image-cutter::before {content: "60 баллов";}
+#profiles_show .Person-0 [id="136"] .image-cutter::before {content: "77 баллов";}
+#profiles_show .Person-0 [id="69133"] .image-cutter::before {content: "78 баллов";}
+#profiles_show .Person-0 [id="50389"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="30273"] .image-cutter::before {content: "79 баллов";}
+#profiles_show .Person-0 [id="4963"] .image-cutter::before {content: "58 баллов";}
+#profiles_show .Person-0 [id="94"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 [id="160603"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="161472"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 [id="87277"] .image-cutter::before {content: "73 балла";}
+#profiles_show .Person-0 [id="61371"] .image-cutter::before {content: "86 баллов";}
+#profiles_show .Person-0 [id="7373"] .image-cutter::before {content: "76 баллов";}
+#profiles_show .Person-0 [id="67069"] .image-cutter::before {content: "88 баллов";}
+#profiles_show .Person-0 [id="40450"] .image-cutter::before {content: "68 баллов";}
+#profiles_show .Person-0 [id="88577"] .image-cutter::before {content: "84 балла";}
+#profiles_show .Person-0 [id="119413"] .image-cutter::before {content: "54 балла";}
+#profiles_show .Person-0 [id="23602"] .image-cutter::before {content: "77 баллов";}
+#profiles_show .Person-0 [id="12064"] .image-cutter::before {content: "89 баллов";}
+#profiles_show .Person-0 [id="13701"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 [id="69411"] .image-cutter::before {content: "75 баллов";}
+#profiles_show .Person-0 [id="43282"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="144487"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="117225"] .image-cutter::before {content: "90 баллов";}
+#profiles_show .Person-0 [id="89339"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 [id="40881"] .image-cutter::before {content: "55 баллов";}
+#profiles_show .Person-0 [id="118739"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 [id="99661"] .image-cutter::before {content: "76 баллов";}
+#profiles_show .Person-0 [id="9719"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="166026"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 [id="119321"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="22037"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 [id="161954"] .image-cutter::before {content: "60 баллов";}
+#profiles_show .Person-0 [id="143196"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="41374"] .image-cutter::before {content: "87 баллов";}
+#profiles_show .Person-0 [id="75284"] .image-cutter::before {content: "83 балла";}
+#profiles_show .Person-0 [id="13390"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="55133"] .image-cutter::before {content: "86 баллов";}
+#profiles_show .Person-0 [id="6043"] .image-cutter::before {content: "76 баллов";}
+#profiles_show .Person-0 [id="37698"] .image-cutter::before {content: "94 балла";}
+#profiles_show .Person-0 [id="31418"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 [id="52723"] .image-cutter::before {content: "85 баллов";}
+#profiles_show .Person-0 [id="20476"] .image-cutter::before {content: "80 баллов";}
+#profiles_show .Person-0 [id="48993"] .image-cutter::before {content: "88 баллов";}
+#profiles_show .Person-0 [id="5190"] .image-cutter::before {content: "70 баллов";}
+#profiles_show .Person-0 [id="624"] .image-cutter::before {content: "78 баллов";}
 
 #profiles_show .Person-0 .cover .image-decor::after {top: 0; left: 0; right: 0; bottom: 0; 
   padding: 0.38rem 0.38rem 0.5rem;
@@ -176,63 +176,59 @@
 }
 #profiles_show .Person-0 .c-column:hover .image-decor::after {opacity: 1;}
 
-#profiles_show .Person-0 a[href*="118765-ram"] .image-decor::after {content: "19 лет, Демон";}
-#profiles_show .Person-0 a[href*="118763-rem"] .image-decor::after {content: "18 лет, Демон";}
-#profiles_show .Person-0 a[href*="43280-inori-"] .image-decor::after {content: "18 лет, Воплощение";}
-#profiles_show .Person-0 a[href*="82525-shiro"] .image-decor::after {content: "11 лет, Человек";}
-#profiles_show .Person-0 a[href*="67067-yukino-"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="34470-kurisu-"] .image-decor::after {content: "18 лет, Человек";}
-#profiles_show .Person-0 a[href*="136-louise-fran-"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="69133-liza-lizu"] .image-decor::after {content: "Возраст ?, Демон";}
-#profiles_show .Person-0 a[href*="50389-rias-"] .image-decor::after {content: "19 лет, Демон";}
-#profiles_show .Person-0 a[href*="30273-yuuko-kanoe"] .image-decor::after {content: "15 лет, Призрак";}
-#profiles_show .Person-0 a[href*="4963-yuno-gasai"] .image-decor::after {content: "16 лет, Человек, Бог";}
-#profiles_show .Person-0 a[href*="94-asuka-langley-"] .image-decor::after {content: "13 лет, Человек";}
-#profiles_show .Person-0 a[href*="160603-miku-nakano"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="161472-nino-nakano"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="87277-touka-"] .image-decor::after {content: "27 лет, Гуль";}
-#profiles_show .Person-0 a[href*="61371-mashiro-"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="7373-holo"] .image-decor::after {content: "800 лет, Волчица";}
-#profiles_show .Person-0 a[href*="67069-yui-yuigahama"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="40450-msyu"] .image-decor::after {content: "? возраст, Раса?";}
-#profiles_show .Person-0 a[href*="88577-fremy-"] .image-decor::after {content: "18 лет, Полу-Кёма";}
-#profiles_show .Person-0 a[href*="119413-yumeko-"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="23602-shinobu-"] .image-decor::after {content: "598 лет, Вампир";}
-#profiles_show .Person-0 a[href*="12064-taiga-aisaka"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="13701-mikoto-misaka"] .image-decor::after {content: "14 лет, Человек";}
-#profiles_show .Person-0 a[href*="69411-kaori-miyazono"] .image-decor::after {content: "15 лет, Человек";}
-#profiles_show .Person-0 a[href*="43282-tsugumi"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="144487-ha-kyung-"] .image-decor::after {content: "? возраст, Человек";}
-#profiles_show .Person-0 a[href*="117225-megumin"] .image-decor::after {content: "14 лет, новелла 18 лет, Человек";}
-#profiles_show .Person-0 a[href*="89339-alice-nakiri"] .image-decor::after {content: "16 лет, Человек";}
-#profiles_show .Person-0 a[href*="40881-mikasa-"] .image-decor::after {content: "19 лет, Человек";}
-#profiles_show .Person-0 a[href*="118739-mai-sakurajima"] .image-decor::after {content: "18 лет, Человек";}
-#profiles_show .Person-0 a[href*="99661-rory-mercury"] .image-decor::after {content: "961 год, Полубог";}
-#profiles_show .Person-0 a[href*="9719-juvia-lockser"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="166026-nero"] .image-decor::after {content: "17 лет, 500 лет в теле птицы, Человек";}
-#profiles_show .Person-0 a[href*="119321-momo-yaoyorozu"] .image-decor::after {content: "16 лет, Человек";}
-#profiles_show .Person-0 a[href*="22037-hitagi-senjougahara"] .image-decor::after {content: "18 лет, Человек";}
-#profiles_show .Person-0 a[href*="161954-kyouryuu-no-"] .image-decor::after {content: "Возраст ? раса?";}
-#profiles_show .Person-0 a[href*="143196-ai-hayasaka"] .image-decor::after {content: "? возраст, Человек";}
-#profiles_show .Person-0 a[href*="41374-subaru-konoe"] .image-decor::after {content: "15 лет, Человек";}
-#profiles_show .Person-0 a[href*="75284-erina-nakiri"] .image-decor::after {content: "15 лет, 25 в настоящее время, Человек";}
-#profiles_show .Person-0 a[href*="13390-haruko-amaya"] .image-decor::after {content: "? возраст, Человек";}
-#profiles_show .Person-0 a[href*="55133-eru-chitanda"] .image-decor::after {content: "16 лет, Человек";}
-#profiles_show .Person-0 a[href*="6043-saeko-busujima"] .image-decor::after {content: "18 лет, Человек";}
-#profiles_show .Person-0 a[href*="z37698-kobato-hasegawa"] .image-decor::after {content: "14 лет, Человек";}
-#profiles_show .Person-0 a[href*="31418-nyaruko"] .image-decor::after {content: "18 лет, Ньярлатотеп";}
-#profiles_show .Person-0 a[href*="z52723-kosaki-onodera"] .image-decor::after {content: "17 лет, Человек";}
-#profiles_show .Person-0 a[href*="20476-charlotte-hazelrink"] .image-decor::after {content: "18 лет, Человек";}
-#profiles_show .Person-0 a[href*="5190-mirajane-strauss"] .image-decor::after {content: "20 лет, Человек";}
-#profiles_show .Person-0 a[href*="48993-masuzu-natsukawa"] .image-decor::after {content: "16 лет, Человек";}
-#profiles_show .Person-0 a[href*="624-seras-victoria"] .image-decor::after {content: "19 лет, на момент обращения 49, Вампир";
+#profiles_show .Person-0 [id="118765"] .image-decor::after {content: "19 лет, Демон";}
+#profiles_show .Person-0 [id="118763"] .image-decor::after {content: "18 лет, Демон";}
+#profiles_show .Person-0 [id="43280"] .image-decor::after {content: "18 лет, Воплощение";}
+#profiles_show .Person-0 [id="82525"] .image-decor::after {content: "11 лет, Человек";}
+#profiles_show .Person-0 [id="67067"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="34470"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 [id="136"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="69133"] .image-decor::after {content: "Возраст ?, Демон";}
+#profiles_show .Person-0 [id="50389"] .image-decor::after {content: "19 лет, Демон";}
+#profiles_show .Person-0 [id="30273"] .image-decor::after {content: "15 лет, Призрак";}
+#profiles_show .Person-0 [id="4963"] .image-decor::after {content: "16 лет, Человек, Бог";}
+#profiles_show .Person-0 [id="94"] .image-decor::after {content: "13 лет, Человек";}
+#profiles_show .Person-0 [id="160603"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="161472"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="87277"] .image-decor::after {content: "27 лет, Гуль";}
+#profiles_show .Person-0 [id="61371"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="7373"] .image-decor::after {content: "800 лет, Волчица";}
+#profiles_show .Person-0 [id="67069"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="40450"] .image-decor::after {content: "? возраст, Раса?";}
+#profiles_show .Person-0 [id="88577"] .image-decor::after {content: "18 лет, Полу-Кёма";}
+#profiles_show .Person-0 [id="119413"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="23602"] .image-decor::after {content: "598 лет, Вампир";}
+#profiles_show .Person-0 [id="12064"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="13701"] .image-decor::after {content: "14 лет, Человек";}
+#profiles_show .Person-0 [id="69411"] .image-decor::after {content: "15 лет, Человек";}
+#profiles_show .Person-0 [id="43282"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="144487"] .image-decor::after {content: "? возраст, Человек";}
+#profiles_show .Person-0 [id="117225"] .image-decor::after {content: "14 лет, новелла 18 лет, Человек";}
+#profiles_show .Person-0 [id="89339"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 [id="40881"] .image-decor::after {content: "19 лет, Человек";}
+#profiles_show .Person-0 [id="118739"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 [id="99661"] .image-decor::after {content: "961 год, Полубог";}
+#profiles_show .Person-0 [id="9719"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="166026"] .image-decor::after {content: "17 лет, 500 лет в теле птицы, Человек";}
+#profiles_show .Person-0 [id="119321"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 [id="22037"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 [id="161954"] .image-decor::after {content: "Возраст ? раса?";}
+#profiles_show .Person-0 [id="143196"] .image-decor::after {content: "? возраст, Человек";}
+#profiles_show .Person-0 [id="41374"] .image-decor::after {content: "15 лет, Человек";}
+#profiles_show .Person-0 [id="75284"] .image-decor::after {content: "15 лет, 25 в настоящее время, Человек";}
+#profiles_show .Person-0 [id="13390"] .image-decor::after {content: "? возраст, Человек";}
+#profiles_show .Person-0 [id="55133"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 [id="6043"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 [id="37698"] .image-decor::after {content: "14 лет, Человек";}
+#profiles_show .Person-0 [id="31418"] .image-decor::after {content: "18 лет, Ньярлатотеп";}
+#profiles_show .Person-0 [id="52723"] .image-decor::after {content: "17 лет, Человек";}
+#profiles_show .Person-0 [id="20476"] .image-decor::after {content: "18 лет, Человек";}
+#profiles_show .Person-0 [id="5190"] .image-decor::after {content: "20 лет, Человек";}
+#profiles_show .Person-0 [id="48993"] .image-decor::after {content: "16 лет, Человек";}
+#profiles_show .Person-0 [id="624"] .image-decor::after {content: "19 лет, на момент обращения 49, Вампир";
   }
 }
-@media screen and (min-width: 240px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 2)!important;
-  }
-}
+@media screen and (min-width: 240px) {#profiles_show .Person-0 .c-column {width: calc(100% / 2)!important;}}
 @media screen and (min-width: 380px) {
   #profiles_show .Person-0 .c-column {
     width: calc(100% / 3)!important;
@@ -242,38 +238,10 @@
     overflow-y: inherit;
   }
 }
-@media screen and (min-width: 500px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 4)!important;
-  }
-}
-@media screen and (min-width: 768px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 5)!important;
-  }
-}
-@media screen and (min-width: 900px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 6)!important;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 7)!important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 8)!important;
-  }
-}
-@media screen and (min-width: 1500px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 9)!important;
-  }
-}
-@media screen and (min-width: 1678px) {
-  #profiles_show .Person-0 .c-column {
-    width: calc(100% / 11)!important;
-  }
-}
+@media screen and (min-width: 500px) {#profiles_show .Person-0 .c-column {width: calc(100% / 4)!important;}}
+@media screen and (min-width: 768px) {#profiles_show .Person-0 .c-column {width: calc(100% / 5)!important;}}
+@media screen and (min-width: 900px) {#profiles_show .Person-0 .c-column {width: calc(100% / 6)!important;}}
+@media screen and (min-width: 1024px) {#profiles_show .Person-0 .c-column {width: calc(100% / 7)!important;}}
+@media screen and (min-width: 1200px) {#profiles_show .Person-0 .c-column {width: calc(100% / 8)!important;}}
+@media screen and (min-width: 1500px) {#profiles_show .Person-0 .c-column {width: calc(100% / 9)!important;}}
+@media screen and (min-width: 1678px) {#profiles_show .Person-0 .c-column {width: calc(100% / 11)!important;}}
