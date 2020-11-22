@@ -24,16 +24,12 @@
 .b-clubs-menu .cc-4.admin{width:48%;float:right;clear:right;left:1rem;}
 .b-clubs-menu .members .b-user{float:left;margin-right:1%!important;position:relative;width:7%;}
 .b-clubs-menu .members .b-user:nth-child(6n + 1){clear:initial;}
-.b-clubs-menu .admin .b-user{margin-bottom:0!important;margin-right:2%!important;position:relative;width:9%;}
+.b-clubs-menu .admin .b-user{margin-bottom:30px!important;margin-right:2%!important;position:relative;width:9%;}
 .b-clubs-menu .cc-4 > .c-column:nth-child(4n + 1){clear:initial;}
 .b-clubs-menu > .invite{position:absolute;top:0;right:0;background:#333;padding:7px;z-index:100;margin:0;}
 header.head{position:relative;z-index:8;}
-.b-clubs-menu .clubs{position:absolute;display: inline-flex;width: 100%;bottom:-4.85rem;left:1rem;margin:0;transition:none;}
-.b-clubs-menu .clubs .b-club{margin:0;float:left;margin-right:2%;width:30%;transition:none;padding:0;}
+.b-clubs-menu .clubs{position:absolute;display: inline-flex;width: 100%;bottom:-4.85rem;left:0;margin:0;transition:none;}
+.b-clubs-menu .clubs .b-club{margin:0;float:left;margin-left: 1rem;margin-right:2%;width:30%;transition:none;padding:0;}
 .b-subposter-action{color:inherit;}
 .b-club .info{position:relative;left:.5rem;}
-}
-@media screen and (min-width: 1200px) {
-.b-clubs-menu .cc-4.admin{min-height:105px;}
-.b-clubs-menu .cc.members{min-height:42px;}
 }
