@@ -76,8 +76,7 @@
   pointer-events: none;
   z-index: 20;
   opacity: 0;
-  text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%),
-   0 -1px 2px rgb(0 0 0 / 75%);
+  text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf,1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf;
   transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
  }
@@ -104,8 +103,7 @@
   font-weight: bold;
   pointer-events: none;
   color: #bbb;
-  text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%),
-   0 -1px 2px rgb(0 0 0 / 75%);
+  text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf,1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf;
   opacity: 0;
   transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
@@ -115,7 +113,7 @@
  }
  .p-profiles .cc-favourites .c-character .cover .image-decor::before {
   position: absolute;
-  display: grid;
+  display: flex;
   content: "";
   top: 0;
   left: 0;
@@ -133,8 +131,7 @@
   font-weight: bold;
   pointer-events: none;
   color: #bbb;
-  text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%),
-   0 -1px 2px rgb(0 0 0 / 75%);
+  text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf,1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf;
   opacity: 1;
   transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
@@ -155,7 +152,7 @@
 .p-profiles .cc-favourites .c-character[id="67067"] .image-cutter::after{content:"65 баллов";}
 .p-profiles .cc-favourites .c-character[id="35252"] .image-cutter::after{content:"84 балла";}
 .p-profiles .cc-favourites .c-character[id="50389"] .image-cutter::after{content:"80 баллов";}
-.p-profiles.cc-favourites .c-character[id="80"] .image-cutter::after{content:"88 баллов";}
+.p-profiles .cc-favourites .c-character[id="80"] .image-cutter::after{content:"88 баллов";}
 .p-profiles .cc-favourites .c-character[id="116275"] .image-cutter::after{content:"75 баллов";}
 .p-profiles .cc-favourites .c-character[id="119321"] .image-cutter::after{content:"80 баллов";}
 .p-profiles .cc-favourites .c-character[id="137825"] .image-cutter::after{content:"80 баллов";}
@@ -204,32 +201,31 @@
 
  /*конец*/
 
- .p-profiles .cc-favourites .c-anime .cover .image-decor::before,
- .p-profiles .cc-favourites .c-manga .cover .image-decor::before {
-  content: "";
-  display: flex;
-  position: absolute;
-  bottom: auto;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  opacity: 1;
-  color: aliceblue;
-  white-space: nowrap;
-  background: transparent;
-  height: 24px;
-  width: 90px;
-  padding: 2px 10px;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(2px);
-  border-radius: 0.4rem 0 0.3rem 0;
-  text-align: center;
-  opacity: 0;
-  text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%),
-   0 -1px 2px rgb(0 0 0 / 75%);
-  transition: 0.2s;
- }
+.p-profiles .cc-favourites .c-anime .cover .image-decor::before,
+.p-profiles .cc-favourites .c-manga .cover .image-decor::before {
+content:"";
+display:flex;
+position:absolute;
+bottom:auto;
+left:0;
+top:0;
+z-index:99;
+opacity:1;
+color:#f0f8ff;
+white-space:nowrap;
+background:transparent;
+height:24px;
+width:fit-content;
+width: -moz-fit-content; 
+padding:2px 10px;
+justify-content:center;
+align-items:center;
+backdrop-filter:blur(2px);
+border-radius:.4rem 0 .3rem 0;
+text-align:center;
+opacity:0;
+text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf,1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf;
+}
  .p-profiles .cc-favourites > .c-anime:hover .cover .image-decor::before,
  .p-profiles .cc-favourites > .c-manga:hover .cover .image-decor::before {
   opacity: 1;
@@ -246,6 +242,7 @@
   bottom: 0;
   z-index: 20;
   padding: 0.38rem;
+  margin: 0;
   font-size: 14px;
   line-height: 1.45;
   overflow: hidden;
@@ -256,8 +253,7 @@
   font-weight: bold;
   pointer-events: none;
   color: #bbb;
-  text-shadow: 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%), 0 -1px 2px rgb(0 0 0 / 75%), 1px 0 2px rgb(0 0 0 / 75%), -1px 0 2px rgb(0 0 0 / 75%), 0 1px 2px rgb(0 0 0 / 75%),
-   0 -1px 2px rgb(0 0 0 / 75%);
+  text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf,1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 2px #000000bf;
   opacity: 1;
   transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
@@ -281,7 +277,7 @@
   font-size: 18px;
   border-radius: 3rem;
  }
- .p-profiles-favorites .b-catalog_entry.planned .image-decor::after,
+  .p-profiles-favorites .b-catalog_entry.planned .image-decor::after,
   .p-profiles-favorites .b-catalog_entry.watching .image-decor::after,
   .p-profiles-favorites .b-catalog_entry.completed .image-decor::after,
   .p-profiles-favorites .b-catalog_entry.rewatching .image-decor::after,
