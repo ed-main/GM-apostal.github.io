@@ -234,7 +234,7 @@ text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 
  .p-profiles .cc-favourites > .c-anime .cover .image-cutter::before,
  .p-profiles .cc-favourites > .c-manga .cover .image-cutter::before {
   position: absolute;
-  display: grid;
+  display: flex;
   content: "";
   top: 0;
   left: 0;
