@@ -11,7 +11,7 @@
 .x1200 .menu-slide-outer.x199 .l-menu,.menu-slide-outer.x199 .l-menu{width:100%;left:0;top:0;position:absolute;padding:0;}
 .b-menu_logo img,.p-clubs-show .l-content .logo img{width:100%;height:330px;opacity:0;z-index:-1;}
 .b-menu_logo{height:345px;margin:0 0 1.5625rem;width:100%;padding:0;}
-.b-menu_logo::before{position:absolute;content:"";top:0;width:100%;height:345px;background:#323232 url(//desu.shikimori.one/system/images/original/110368.gif?1605900533) no-repeat center 50% / cover;z-index:-1;border-radius:.24rem;box-shadow:0 2px 6px 2px rgba(0,0,0,0.3);}
+.b-menu_logo::before{position:absolute;content:"";top:0;width:100%;height:345px;background:#323232 url(//dere.shikimori.one/system/user_images/original/208335/1280704.jpg) no-repeat center 50% / cover;z-index:-1;border-radius:.24rem;box-shadow:0 2px 6px 2px rgba(0,0,0,0.3);}
 .b-menu_logo::after{content:"";width:100%;height:30px;position:absolute;left:0;box-shadow:0 1px 2px 0 #00000040;top:20.5rem;background:rgba(var(--block-color),01);}
 .b-clubs-menu .b-subposter-actions{position:absolute;width:400px;margin:0;padding:0;top:20.5rem;right:0;}
 .l-menu .b-link_button.maxi,.l-menu .create-topic{position:absolute;width:160px;margin:0;top:-2.55rem;height:30px;display:flex;justify-content:center;align-items:center;padding:0;}
