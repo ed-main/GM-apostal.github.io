@@ -12,7 +12,6 @@
 .qa-link:hover:before{left:4.25rem;transition:.15s ease-in-out;transform:scale(1);}
 
 @media screen and (max-width: 1200px) {.qa-panel {display: none;}}
-
 .qa01 {background: url("//kawai.shikimori.one/system/clubs/x48/811.png?1480939423") no-repeat 50% 50% / 85%;}
 .qa02 {background: url("//desu.shikimori.one/system/clubs/main/1678.png?1557829461") no-repeat 50% 50% / 102%;}
 .qa03 {background: url("//i.ibb.co/bgbTB1z/gwe.png") no-repeat 50% 50% / 100%;}
