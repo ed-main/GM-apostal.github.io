@@ -18,7 +18,7 @@
    transition: margin 0s, padding 0s;
    border-radius: 0.25rem;
    border: 0.25rem solid rgba(var(--block-color), 0.3);
-   box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+   box-shadow: 0 2px 8px #00000033;
 }
 /* Контроль над самой картинкой */
 .u-carousel .b-image.b-poster img {
@@ -48,7 +48,6 @@
     transform: translateX(-100%);
     transition: none;
 }
-
 .u-carousel .u-carousel_images > div > .b-image,
 .u-carousel .u-carousel_images > div > .b-poster { transform: translate(12px, 50%); opacity: 0;}
 .u-carousel .u-carousel_images > .active > .b-image,
@@ -58,7 +57,7 @@
 
 .u-carousel.animated .u-carousel_images div > .b-image,
 .u-carousel.animated .u-carousel_images div > .b-poster {
-   transition: 0.7s linear, opacity 0.5s, margin 0s, font-size 0s, -webkit-0.7s linear;
+   transition: 0s linear, opacity .5s, transform 0.7s linear;
    will-change: transform;
 }
 /* Переключатели */
@@ -106,10 +105,10 @@
    width: 4.0625rem;
    padding: 1.25rem;
    font-size: 3.25em;
-   background: linear-gradient(90deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 0%));
-   color: rgb(28 28 28 / 95%);
+   background: linear-gradient(90deg, #0000004d, #00000000);
+   color: #1c1c1cf2;
    opacity: 0;
-   transition: margin 0s, padding 0s, font-size 0s, color 0s, opacity .16s ease-in-out;
+   transition: 0s ease-in-out, opacity .18s;
    pointer-events: none;
    z-index: 1;
    font-weight: bold;
@@ -118,7 +117,7 @@
    content: "";
    justify-content: flex-end;
    right: 0;
-   background: linear-gradient(270deg, rgb(0 0 0 / 30%), rgb(0 0 0 / 0%));
+   background: linear-gradient(270deg, #0000004d, #00000000);
 }
 .u-carousel .u-carousel_images:hover::before,
 .u-carousel .u-carousel_images:hover::after { opacity: 1;}
@@ -134,7 +133,7 @@
    right: 0;
    margin: 2em;
    padding: .36em 1em;
-   background: rgb(0 0 0 / 40%);
+   background-color: #00000066;
    border-radius: 5px;
    color: #eee;
    backface-visibility: hidden;
