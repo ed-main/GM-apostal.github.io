@@ -85,7 +85,7 @@
  }
  .p-profiles .cc-favourites .c-character .image-cutter::before {
   position: absolute;
-  display: grid;
+  display: flex;
   content: "";
   top: 0;
   left: 0;
