@@ -21,7 +21,8 @@
    box-shadow: 0 2px 8px #00000033;
 }
 /* Контроль над самой картинкой */
-.u-carousel .b-image.b-poster img {
+.u-carousel .b-image.b-poster img,
+.u-carousel .b-image img {
    position: absolute;
    width: 100vw;
    height: 100%;
