@@ -361,14 +361,16 @@
   .p-animes_collection-index .b-collection-filters .b-block_list li.selected:before {
     margin-bottom: 0;
   }
-  .p-animes_collection-index [data-base_path="/animes"] > .block:nth-child(0n + 3),
   .p-animes_collection-index [data-base_path="/animes"] > .block.scores,
   .p-animes_collection-index [data-base_path="/animes"] > .block.durations,
+  .p-animes_collection-index [data-base_path="/animes"] > .block:nth-child(0n + 3),
   .p-animes_collection-index [data-base_path="/mangas"] > .block:nth-child(0n + 3),
+  .p-animes_collection-index [data-base_path="/ranobe"] > .block:nth-child(0n + 3),
   .p-animes_collection-index [data-base_path="/animes"] > .block:nth-child(0n + 9),
   .p-animes_collection-index [data-base_path="/ranobe"] > .block:nth-child(0n + 9),
-  .p-animes_collection-index [data-base_path="/mangas"] > .block:nth-child(0n + 10) {
-    display: none;
+  .p-animes_collection-index [data-base_path="/mangas"] > .block:nth-child(0n + 10),
+  .p-animes_collection-index [data-base_path="/ranobe"] > .block:nth-child(0n + 10) {
+     display: none;
   }
   .p-animes_collection-index [data-base_path="/mangas"] .b-block_list.scores.anime-params [data-value="6"],
   .p-animes_collection-index [data-base_path="/ranobe"] .b-block_list.scores.anime-params [data-value="6"],
