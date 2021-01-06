@@ -5,7 +5,6 @@
   filter: contrast(102%);
   overflow: visible;
  }
-
  #profiles_show .cc-favourites .image-cutter {
   height: 0;
   padding-bottom: 59%;
@@ -36,6 +35,7 @@
   padding-bottom: 59%;
   background-color: #333;
   box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  image-rendering: -webkit-optimize-contrast;
   transition: box-shadow 0.45s ease;
   -webkit-transition: box-shadow 0.45s ease;
  }
@@ -318,7 +318,7 @@ text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 
   }
 
  .p-profiles .cc-favourites .c-anime[id="38101"] .image-cutter {
-  background: url("//moe.shikimori.one/system/user_images/original/274756/1080982.jpg") no-repeat center / cover;
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1331363.jpg") no-repeat center / cover;
  }
  .p-profiles .cc-favourites .c-anime[id="35790"] .image-cutter {
   background: url("//moe.shikimori.one/system/images/original/110382.gif?1605905706") no-repeat center / cover;
@@ -339,7 +339,7 @@ text-shadow:1px 0 2px #000000bf,-1px 0 2px #000000bf,0 1px 2px #000000bf,0 -1px 
   background: url("//desu.shikimori.one/system/user_images/original/208335/1056483.jpg") no-repeat center / cover;
  }
  .p-profiles .cc-favourites .c-manga[id="99177"] .image-cutter {
-  background: url("//kawai.shikimori.one/system/user_images/original/208335/1331361.jpg") no-repeat center / cover;
+  background: url("//dere.shikimori.one/system/user_images/original/208335/1331364.jpg") no-repeat center / cover;
  }
  .p-profiles .cc-favourites .c-manga[id="24"] .image-cutter {
   background: url("//moe.shikimori.one/system/images/original/110352.gif?1605858231") no-repeat center / cover;
