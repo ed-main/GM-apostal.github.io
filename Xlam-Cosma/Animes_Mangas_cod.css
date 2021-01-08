@@ -19,10 +19,10 @@
         border-radius: 0.5rem;
         background-image: none;
         background: linear-gradient(transparent 0%, rgba(var(--menu-back), 0.32) 100%);
-        box-shadow: 0px 0px 2px 2px #00000026;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
     }
     #profiles_show .Razmer-v2-row-1 > .Animes_Mangas .b-catalog_entry .cover .image-decor .image-cutter {
-       padding: 0 0 56%;
+       padding: 0 0 57.5%;
     }
     #profiles_show .Animes_Mangas .c-column {
         display: inline-block;
@@ -170,6 +170,7 @@
         filter: contrast(102%);
         image-rendering: auto;
         box-shadow: inset 0 0 15px 5px rgb(0 0 0 / 50%);
+        image-rendering: -webkit-optimize-contrast;
         transition: box-shadow 0.45s ease;
         -webkit-transition: box-shadow 0.45s ease;
     }
