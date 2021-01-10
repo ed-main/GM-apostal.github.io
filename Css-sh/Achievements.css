@@ -37,6 +37,7 @@
         height: 100%;
         padding: 1.5rem 0.5rem 0;
         line-height: 1.25;
+        font-size: 1em;
         border-radius: 16rem;
         transition: 0s, padding 0.4s, opacity 0.4s;
     }
