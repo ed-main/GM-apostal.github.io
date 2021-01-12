@@ -249,22 +249,20 @@
     text-align: left;
     margin: 0;
   }
-  #profiles_show .profile-head .c-info .c-additionals {
-    margin: auto 11rem auto !important;
-    display: flex;
-    padding: 0 0 6rem 10rem;
-    height: 100%;
-    align-items: center;
+#profiles_show .profile-head .c-info .c-additionals {
+    display: inline-flex;
     position: relative;
+    overflow: visible;
+    margin: 0;
     width: 100%;
-    text-align: left;
+    height: 100%;
+    padding-left: 21rem;
+    align-items: center;
     font-size: 13px;
     background: none;
-    overflow: visible;
     z-index: 15;
-    text-shadow: 1px -1px 0px rgba(var(--nick-cover), 0.3), -1px 1px 0px rgba(var(--nick-cover), 0.3), -1px -1px 0px rgba(var(--nick-cover), 0.3), 1px 1px 0px rgba(var(--nick-cover), 0.3), 0px -1px 0px rgba(var(--nick-cover), 0.3),
-      0px 1px 0px rgba(var(--nick-cover), 0.3), 1px 0px 0px rgba(var(--nick-cover), 0.3), -1px 0px 0px rgba(var(--nick-cover), 0.3);
-  }
+    text-shadow: 1px -1px 0px rgba(var(--nick-cover), 0.3), -1px 1px 0px rgba(var(--nick-cover), 0.3), -1px -1px 0px rgba(var(--nick-cover), 0.3), 1px 1px 0px rgba(var(--nick-cover), 0.3), 0px -1px 0px rgba(var(--nick-cover), 0.3), 0px 1px 0px rgba(var(--nick-cover), 0.3), 1px 0px 0px rgba(var(--nick-cover), 0.3), -1px 0px 0px rgba(var(--nick-cover), 0.3);
+}
   #profiles_show .profile-head .c-info .c-additionals div a {
     font-size: 13px !important;
     color: rgba(var(--light-color), var(--hundred));
@@ -315,9 +313,8 @@
   }
   #profiles_show .profile-head .c-info {
     position: static;
-    width: auto;
-    right: 200px;
     overflow: visible;
+    width: auto; 
   }
   #profiles_show .profile-actions .fav-remove::before,
   #profiles_show .profile-actions .ignore-remove::before {
