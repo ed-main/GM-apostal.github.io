@@ -268,20 +268,20 @@
     color: rgba(var(--light-color), var(--hundred));
   }
   #profiles_show .profile-head .c-brief {
-    position: relative;
-    z-index: 3;
     display: flex;
-    align-items: flex-end;
-    padding-left: 10rem;
-    height: 100%;
+    position: relative;
     width: 100%;
-    margin: -11.5vh 0 0 0 !important;
+    height: 100%;
+    margin-top: -11.5vh;
+    padding-left: 10rem;
+    z-index: 3;
+    align-items: flex-end;
     transition: none;
   }
   #profiles_show .profile-head .c-brief .avatar {
     width: 160px;
     height: 160px;
-    float: none !important;
+    float: none;
     display: flex;
     justify-content: center;
     align-items: center;
