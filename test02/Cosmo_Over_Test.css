@@ -247,6 +247,7 @@
   }
   #profiles_show .profile-head .c-brief header {
     margin: 0;
+    z-index: 4;
   }
 #profiles_show .profile-head .c-info .c-additionals {
     display: inline-flex;
@@ -273,7 +274,6 @@
     height: 100%;
     margin-top: -11.5vh;
     padding-left: 10rem;
-    z-index: 3;
     align-items: flex-end;
     transition: none;
   }
@@ -281,6 +281,7 @@
     width: 160px;
     height: 160px;
     float: none;
+    z-index: 4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +355,6 @@
     position: relative;
     width: 100%;
     height: 102vh;
-    z-index: 2;
     padding: 0;
     background-color: rgba(var(--menu-back), 0.8);
     overflow: hidden !important;
