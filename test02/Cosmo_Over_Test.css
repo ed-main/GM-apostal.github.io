@@ -132,7 +132,7 @@
     font-size: 13px;
     color: #fff;
     z-index: 15;
-    transition: 0s ease-in-out, bottom 0.4s ease-in-out;
+    transition: 0.4s ease-in-out, margin 0s, padding 0s,line-height 0s;
   }
   #profiles_show .c-column.c-left::before {
     width: 110px;
