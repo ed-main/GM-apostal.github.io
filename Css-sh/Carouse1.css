@@ -1,3 +1,4 @@
+.counter-02 {text-align: center;}
 /* Карусель */
 .u-carousel {
    display: inline-flex;
@@ -5,6 +6,7 @@
    transition: none;
    max-width: 1265px;
    width: calc(100% / 3);
+   text-align: start;
 }
 /* Изображения */
 .u-carousel .u-carousel_images {
