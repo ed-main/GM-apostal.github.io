@@ -276,6 +276,7 @@
     padding-left: 10rem;
     align-items: flex-end;
     transition: none;
+    pointer-events: none;
   }
   #profiles_show .profile-head .c-brief .avatar {
     width: 160px;
@@ -368,7 +369,6 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center top;
@@ -430,6 +430,7 @@
     bottom: 2.5rem;
     width: 200px;
     z-index: 22;
+    pointer-events: auto;
   }
   #profiles_show .c-brief header .notice {
     line-height: 2;
