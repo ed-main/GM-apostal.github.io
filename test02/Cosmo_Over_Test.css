@@ -344,6 +344,7 @@
     font-size: 13px !important;
     margin-right: 7%;
     transition: none;
+    pointer-events: auto;
   }
   * .c-brief header.head h1 {
     position: relative;
