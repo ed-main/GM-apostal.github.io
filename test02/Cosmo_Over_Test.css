@@ -455,6 +455,16 @@
     will-change: transform;
     width: 50px;
   }
+ .profile-actions .mail:hover::before,
+ .profile-actions .talk:hover::before,
+ .profile-actions .fav-remove:hover::before,
+ .profile-actions .ban:hover::before,
+ .profile-actions .fav-add:hover::before,
+ .profile-actions .settings:hover::before,
+ .profile-actions .ignore-add:hover::before,
+ .profile-actions .ignore-remove:hover::before {
+    transform: translateY(-0.5rem);
+}
   #profiles_show.x1200 .c-right,
   #profiles_show.x1000 .c-right {
     width: 100% !important;
@@ -512,6 +522,7 @@
   #profiles_show .profile-head .c-brief .avatar .profile-actions a {
     margin: 0px;
     width: 50px;
+    padding-top: 0.5rem;
     transition: none;
   }
   #profiles_show .cc-friends .b-user {
