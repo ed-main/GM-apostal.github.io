@@ -13,6 +13,7 @@
    #profiles_show .profile-head .c-brief header {
       text-align: center;
       margin: 0 !important;
+      padding: 0.4rem 0;
    }
    #profiles_show .profile-actions {
       bottom: 9rem;
