@@ -35,9 +35,6 @@
     padding: 0 0.3125rem 0;
     margin-bottom: 1.5625rem;
   }
-  body#profiles_show .profile-head .c-history {
-    margin: 0 0 0 0 !important;
-  }
   #profiles_show .c-left,
   #profiles_show.x1200 .c-column.c-left,
   #profiles_show .cc-2 .c-column .cc-2a.m30,
@@ -464,7 +461,7 @@
  .profile-actions .ignore-add:hover::before,
  .profile-actions .ignore-remove:hover::before {
     transform: translateY(-0.5rem);
-}
+  }
   #profiles_show.x1200 .c-right,
   #profiles_show.x1000 .c-right {
     width: 100% !important;
