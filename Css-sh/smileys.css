@@ -10,7 +10,7 @@
       height: 407.5px;
       padding: 0.05rem 0.625rem;
       margin: auto;
-      border-radius: 0.6rem 0.3rem 0.6rem 0.6rem;
+      border-radius: 0.6rem;
       z-index: 15;
       overflow: auto;
       background: rgba(var(--menu-back), 0.8) url(/\x/nyaa.shikimori.one/system/user_images/original/274756/1408685.jpg) no-repeat center / cover;
