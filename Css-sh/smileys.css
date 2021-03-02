@@ -1,4 +1,7 @@
 @media screen and (min-width: 100px) {
+   .b-shiki_editor .smileys::-webkit-scrollbar-button:vertical:decrement {
+      height: 15px;
+    }
    .b-shiki_editor .smileys {
       position: absolute;
       right: 0;
