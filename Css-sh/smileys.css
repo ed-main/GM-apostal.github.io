@@ -32,15 +32,15 @@
       backdrop-filter: blur(2px);
    }
    .smiley {
-      width: 60px;
-      height: 60px;
+      width: 59px;
+      height: 59px;
       object-fit: cover;
       object-position: center;
       image-rendering: -webkit-optimize-contrast;
    }
    .b-shiki_editor .smileys img {
-      width: 60px;
-      height: 60px;
+      width: 59px;
+      height: 59px;
       padding: 2px;
       opacity: 0.85;
       margin: 0 1.3% 0.25rem 0;
@@ -96,6 +96,7 @@
       top: 6.65rem;
       right: 0;
       left: auto;
+      height: 358.5px;
       max-width: 445px;
    }
 }
@@ -104,7 +105,7 @@
       right: 0;
       left: 0;
       top: 0;
-      height: 407.5px;
+      height: 475px;
       width: 100%;
       max-width: 100%;
    }
