@@ -1,1 +1,280 @@
-@media screen and (min-width: 768px){.b-club .info{position:relative;left:.5rem;}.b-clubs-menu .admin .b-user{margin-bottom:15px!important;margin-right:2%!important;position:relative;width:9%;z-index:25;}.b-clubs-menu .b-subposter-actions{position:absolute;width:400px;margin:0;padding:0;top:20.5rem;right:0;}.b-clubs-menu .block .b-link_button.dark{position:absolute;bottom:.66rem;}.b-clubs-menu .cc-4 > .c-column:nth-child(4n + 1){clear:initial;}.b-clubs-menu .cc-4.admin{width:48%;float:right;clear:right;left:1rem;z-index:25;}.b-clubs-menu .cc.members{width:48%;float:left;clear:left;left:1rem;z-index:25;}.b-clubs-menu .clubs{display:inline-flex;position:relative;width:100%;margin:0;transition:none;}.b-clubs-menu .clubs .b-club{margin:0;float:left;margin-left:1rem;margin-right:2%;width:30%;transition:none;padding:0;}.b-clubs-menu .members .b-user{float:left;margin-right:1%!important;position:relative;width:15.65%;}.b-clubs-menu > .invite{position:absolute;top:0;right:0;background:#333;padding:7px;z-index:100;margin:0;}.b-clubs-menu div.block.m0 > .subheadline{width:calc(100% / 2 - 1 * 2%)!important;z-index:25;position:absolute;font-size:0;height:0;right:0;left:auto!important;box-shadow:none!important;float:none!important;}.b-clubs-menu div.block.m0 > .subheadline:before{position:absolute;display:flex;content:"администрация";left:1rem;bottom:.6rem;visibility:visible;font-size:15px;height:28px;width:92%;line-height:2;}.b-clubs-menu div.block:nth-child(1n) .subheadline:nth-child(1n){width:calc(100% / 1 - 1 * 2%);float:none;left:.75rem;z-index:25;}.b-gallery .b-image img{position:fixed;top:.2rem;width:225px!important;height:140px!important;min-height:140px;min-width:225px;left:.75rem;padding:.625rem;background:#f0f8ff61;margin:0;object-fit:cover;border-radius:.3rem;vertical-align:top!important;object-position:50% 25%;background:rgba(var(--block-color),0.6);transition:0s ease,-webkit-0s ease,margin 0s,padding 0s,opacity 0s,border 0s,background-image 0s,visibility 0s,box-shadow .2s ease-out,transform .3s ease-out,width 0s,height 0s,left 0s,top 0s,min-height 0s!important;}.b-gallery .b-image:not(.no-zoom),.b-gallery .b-image,.b-gallery .grid_sizer{width:100%;height:100%;display:flex;z-index:3;line-height:0;overflow:visible;padding:0!important;vertical-align:top;max-width:230px;max-height:145px;min-height:145px;min-width:230px;margin:0!important;transition:none!important;transform:scale(1);transform:matrix3d(1,0,1,0,0,1,1,0,0,0,1,0,0,0,0,1);}.b-gallery.block{margin-bottom:-.35rem;}.b-menu-line{display:inline-flex;margin:0 1%;width:48%;height:28px;box-shadow:0 2px 6px 2px rgba(0,0,0,0.2);background:rgba(var(--block-color),0.6);border-radius:1rem;transition:background .3s ease;}.b-menu-line .b-link{width:100%;text-align:center;margin:auto;}.b-menu-line:hover{color:rgba(var(--hover-color),var(--hundred));background:rgba(var(--shadows-color),0.15);}.b-menu_logo{height:345px;margin:0 0 1.5625rem;width:100%;padding:0;}.b-menu_logo img,.p-clubs-show .l-content .logo img{width:100%;height:330px;opacity:0;z-index:-1;}.b-menu_logo::after{content:"";width:100%;height:30px;position:absolute;left:0;box-shadow:0 1px 2px 0 #00000040;top:20.5rem;background:rgba(var(--block-color),01);}.b-menu_logo::before{position:absolute;content:"";top:0;width:100%;height:345px;background:#323232 url(//dere.shikimori.one/system/user_images/original/208335/1280704.jpg) no-repeat center 50% / cover;z-index:-1;border-radius:.24rem;box-shadow:0 2px 6px 2px rgba(0,0,0,0.3);}.b-subposter-action{color:inherit;}.block{margin-bottom:10px;}.l-menu .b-link_button.dark{background:none;box-shadow:none;}.l-menu .b-link_button.maxi,.l-menu .create-topic{position:absolute;width:160px;margin:0;top:-2.55rem;height:30px;display:flex;justify-content:center;align-items:center;padding:0;}.l-menu .b-link_button:hover,.l-menu .b-link_button.dark:hover{background:none;box-shadow:none;}.l-menu .block:last-child{padding:0 .5rem;}.l-page .menu-slide-outer:not(.ipad-expanded) .menu-slide-inner{width:100%;max-width:100%;}.p-club_pages-new.x1200 .menu-slide-outer.x199 .l-content,.p-club_pages-new .menu-slide-outer.x199 .l-content{padding-top:0;}.p-clubs-images .b-gallery .container{position:relative;transition:none!important;padding:0;overflow-y:auto!important;overflow-x:hidden!important;max-height:600px!important;min-height:63.5rem!important;margin-bottom:1rem;}.p-clubs-images .b-gallery.block{margin-bottom:1rem;}.p-clubs-show .b-gallery .container{transition:none!important;overflow-y:auto;overflow-x:hidden;margin-bottom:-.35rem;height:292.5px!important;padding:0;}.x1000 .l-page,.x1200 .l-page{max-width:1200px;width:98.65%!important;}.x1200 .menu-slide-outer.x199 .l-content,.menu-slide-outer.x199 .l-content{padding-top:7%;margin:33.5rem 0 0;transition:margin 0s,padding 0s,float 0s,width 0s;width:100%;}.x1200 .menu-slide-outer.x199 .l-menu,.menu-slide-outer.x199 .l-menu{width:100%;left:0;top:0;position:absolute;padding:0;}header.head{position:relative;z-index:8;}}
+@media screen and (min-width: 768px) {
+    .b-club .info {
+        position: relative;
+        left: 0.5rem;
+    }
+    .b-clubs-menu .admin .b-user {
+        margin-bottom: 15px !important;
+        margin-right: 2% !important;
+        position: relative;
+        width: 9%;
+        z-index: 25;
+    }
+    .b-clubs-menu .b-subposter-actions {
+        position: absolute;
+        width: 400px;
+        margin: 0;
+        padding: 0;
+        top: 20.5rem;
+        right: 0;
+    }
+    .b-clubs-menu .block .b-link_button.dark {
+        position: absolute;
+        bottom: 0.66rem;
+    }
+    .b-clubs-menu .cc-4 > .c-column:nth-child(4n + 1) {
+        clear: initial;
+    }
+    .b-clubs-menu .cc-4.admin {
+        width: 48%;
+        float: right;
+        clear: right;
+        left: 1rem;
+        z-index: 25;
+    }
+    .b-clubs-menu .cc.members {
+        width: 48%;
+        float: left;
+        clear: left;
+        left: 1rem;
+        z-index: 25;
+    }
+    .b-clubs-menu .clubs {
+        display: inline-flex;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        transition: none;
+    }
+    .b-clubs-menu .clubs .b-club {
+        margin: 0;
+        float: left;
+        margin-left: 1rem;
+        margin-right: 2%;
+        width: 30%;
+        transition: none;
+        padding: 0;
+    }
+    .b-clubs-menu .members .b-user {
+        float: left;
+        margin-right: 1% !important;
+        position: relative;
+        width: 15.65%;
+    }
+    .b-clubs-menu > .invite {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #333;
+        padding: 7px;
+        z-index: 100;
+        margin: 0;
+    }
+    .b-clubs-menu div.block.m0 > .subheadline {
+        width: calc(100% / 2 - 1 * 2%) !important;
+        z-index: 25;
+        position: absolute;
+        font-size: 0;
+        height: 0;
+        right: 0;
+        left: auto !important;
+        box-shadow: none !important;
+        float: none !important;
+    }
+    .b-clubs-menu div.block.m0 > .subheadline:before {
+        position: absolute;
+        display: flex;
+        content: "администрация";
+        left: 1rem;
+        bottom: 0.6rem;
+        visibility: visible;
+        font-size: 15px;
+        height: 28px;
+        width: 92%;
+        line-height: 2;
+    }
+    .b-clubs-menu div.block:nth-child(1n) .subheadline:nth-child(1n) {
+        width: calc(100% / 1 - 1 * 2%);
+        float: none;
+        left: 0.75rem;
+        z-index: 25;
+    }
+    .b-gallery .b-image img {
+        position: fixed;
+        top: 0.2rem;
+        width: 225px !important;
+        height: 140px !important;
+        min-height: 140px;
+        min-width: 225px;
+        left: 0.75rem;
+        padding: 0.625rem;
+        background: #f0f8ff61;
+        margin: 0;
+        object-fit: cover;
+        border-radius: 0.3rem;
+        vertical-align: top !important;
+        object-position: 50% 25%;
+        background: rgba(var(--block-color), 0.6);
+        transition: 0s ease, -webkit-0s ease, margin 0s, padding 0s, opacity 0s, border 0s, background-image 0s, visibility 0s, box-shadow 0.2s ease-out, transform 0.3s ease-out, width 0s, height 0s, left 0s, top 0s, min-height 0s !important;
+    }
+    .b-gallery .b-image:not(.no-zoom),
+    .b-gallery .b-image,
+    .b-gallery .grid_sizer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: 3;
+        line-height: 0;
+        overflow: visible;
+        padding: 0 !important;
+        vertical-align: top;
+        max-width: 230px;
+        max-height: 145px;
+        min-height: 145px;
+        min-width: 230px;
+        margin: 0 !important;
+        transition: none !important;
+        transform: scale(1);
+        transform: matrix3d(1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    .b-gallery.block {
+        margin-bottom: -0.35rem;
+    }
+    .b-menu-line {
+        display: inline-flex;
+        margin: 0 1%;
+        width: 48%;
+        height: 28px;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2);
+        background: rgba(var(--block-color), 0.6);
+        border-radius: 1rem;
+        transition: background 0.3s ease;
+    }
+    .b-menu-line .b-link {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .b-menu-line:hover {
+        color: rgba(var(--hover-color), var(--hundred));
+        background: rgba(var(--shadows-color), 0.15);
+    }
+    .b-menu_logo {
+        height: 345px;
+        margin: 0 0 1.5625rem;
+        width: 100%;
+        padding: 0;
+    }
+    .b-menu_logo img,
+    .p-clubs-show .l-content .logo img {
+        width: 100%;
+        height: 330px;
+        opacity: 0;
+        z-index: -1;
+    }
+    .b-menu_logo::after {
+        content: "";
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        box-shadow: 0 1px 2px 0 #00000040;
+        top: 20.5rem;
+        background: rgba(var(--block-color), 01);
+    }
+    .b-menu_logo::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 100%;
+        height: 345px;
+        background: #323232 url(//nyaa.shikimori.one/system/user_images/original/208335/1410450.jpg) no-repeat center 50% / cover;
+        z-index: -1;
+        border-radius: 0.24rem;
+        box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+    }
+    .b-subposter-action {
+        color: inherit;
+    }
+    .block {
+        margin-bottom: 10px;
+    }
+    .l-menu .b-link_button.dark {
+        background: none;
+        box-shadow: none;
+    }
+    .l-menu .b-link_button.maxi,
+    .l-menu .create-topic {
+        position: absolute;
+        width: 160px;
+        margin: 0;
+        top: -2.55rem;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .l-menu .b-link_button:hover,
+    .l-menu .b-link_button.dark:hover {
+        background: none;
+        box-shadow: none;
+    }
+    .l-menu .block:last-child {
+        padding: 0 0.5rem;
+    }
+    .l-page .menu-slide-outer:not(.ipad-expanded) .menu-slide-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+    .p-club_pages-new.x1200 .menu-slide-outer.x199 .l-content,
+    .p-club_pages-new .menu-slide-outer.x199 .l-content {
+        padding-top: 0;
+    }
+    .p-clubs-images .b-gallery .container {
+        position: relative;
+        transition: none !important;
+        padding: 0;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        max-height: 600px !important;
+        min-height: 63.5rem !important;
+        margin-bottom: 1rem;
+    }
+    .p-clubs-images .b-gallery.block {
+        margin-bottom: 1rem;
+    }
+    .p-clubs-show .b-gallery .container {
+        transition: none !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-bottom: -0.35rem;
+        height: 292.5px !important;
+        padding: 0;
+    }
+    .x1000 .l-page,
+    .x1200 .l-page {
+        max-width: 1200px;
+        width: 98.65% !important;
+    }
+    .x1200 .menu-slide-outer.x199 .l-content,
+    .menu-slide-outer.x199 .l-content {
+        padding-top: 7%;
+        margin: 33.5rem 0 0;
+        transition: margin 0s, padding 0s, float 0s, width 0s;
+        width: 100%;
+    }
+    .x1200 .menu-slide-outer.x199 .l-menu,
+    .menu-slide-outer.x199 .l-menu {
+        width: 100%!important;
+        min-width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        padding: 0;
+    }
+    header.head {
+        position: relative;
+        z-index: 8;
+    }
+}
