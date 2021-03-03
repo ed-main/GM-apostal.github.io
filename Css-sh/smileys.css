@@ -13,7 +13,8 @@
       border-radius: 0.6rem;
       z-index: 15;
       overflow: auto;
-      background: rgba(var(--menu-back), 0.8) url(/\x/nyaa.shikimori.one/system/user_images/original/274756/1408685.jpg) no-repeat center / cover;
+      background-color: rgba(var(--menu-back), 1);
+      background: url(/\x/nyaa.shikimori.one/system/user_images/original/274756/1408685.jpg) no-repeat center / cover;
       box-shadow: 0 2px 6px 2px #00000040;
       width: 85%;
       max-width: 600px;
