@@ -1030,7 +1030,7 @@ body#profiles_show .b-to-top .slide:before {
     top: auto;
     left: 0;
     bottom: 0;
-    width: 60px!important;
+    width: 50px!important;
     height: 50px;  
     background: transparent;
     opacity: 0;
