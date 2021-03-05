@@ -1,0 +1,542 @@
+.counter-01 {
+  text-align: center;
+}
+/* Карусель */
+.u2-carousel {
+  display: inline-flex;
+  position: relative;
+  transition: none;
+  text-align: start;
+  max-width: 765px;
+  width: calc(100% / 5);
+}
+/* Изображения */
+.u2-carousel .u-carousel_images {
+  position: relative;
+  padding: 74% 0;
+  margin: 0.5rem;
+  width: 100%;
+  height: 1px;
+  overflow: hidden;
+  user-select: none;
+  transition: margin 0s, padding 0s;
+  border-radius: 0.25rem;
+  border: 0.25rem solid rgba(var(--block-color), 0.3);
+  box-shadow: 0 2px 8px #00000033;
+  filter: brightness(0.95);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.u2-carousel .b-image img {
+  display: none;
+}
+.u2-carousel .b-image {
+  background-repeat: no-repeat !important;
+}
+
+.u2-carousel .u-carousel_images > div > .b-image,
+.u2-carousel .u-carousel_images > div > .b-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transform: translateX(-100%);
+  transition: none;
+}
+.u2-carousel .u-carousel_images > div > .b-image,
+.u2-carousel .u-carousel_images > div > .b-poster {
+  transform: translate(12px, 50%);
+  opacity: 0;
+}
+.u2-carousel .u-carousel_images > .active > .b-image,
+.u2-carousel .u-carousel_images > .active > .b-poster {
+  transform: translateX(0);
+  opacity: 1;
+}
+.u2-carousel .u-carousel_images > .active ~ div > .b-image,
+.u2-carousel .u-carousel_images > .active ~ div > .b-poster {
+  transform: translateX(100%);
+}
+
+.u2-carousel.animated .u-carousel_images div > .b-image,
+.u2-carousel.animated .u-carousel_images div > .b-poster {
+  transition: 0s linear, opacity 0.5s, transform 0.7s linear;
+  will-change: transform;
+}
+/* Переключатели */
+.u2-carousel .u-carousel_images > div::before,
+.u2-carousel .u-carousel_images > div::after {
+  content: "";
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4.25rem;
+  font-size: 32px;
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+}
+.u2-carousel .u-carousel_images .b-image:hover img {
+  opacity: 1;
+}
+.u2-carousel .u-carousel_images > div::after {
+  right: 0;
+}
+
+.u2-carousel .u-carousel_images > div:not(.active):first-child::after,
+.u2-carousel .u-carousel_images > .active + div::after,
+.u2-carousel .u-carousel_images > div::before,
+.u2-carousel .u-carousel_images > .active:first-child ~ div:last-child::before {
+  display: flex;
+}
+
+.u2-carousel .u-carousel_images > br,
+.u2-carousel .u-carousel_images > div > br,
+.u2-carousel .u-carousel_images .b-image .marker,
+.u2-carousel .u-carousel_images > .active::before,
+.u2-carousel .u-carousel_images > .active ~ div::before {
+  display: none;
+}
+
+/* Псевдо-переключатели */
+.u2-carousel .u-carousel_images::before,
+.u2-carousel .u-carousel_images::after {
+  content: "";
+  font-family: "shikimori";
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  width: 4.0625rem;
+  padding: 1.25rem;
+  font-size: 3.25em;
+  background: linear-gradient(90deg, #0000004d, #00000000);
+  color: #1c1c1cf2;
+  opacity: 0;
+  transition: 0s ease-in-out, opacity 0.18s;
+  pointer-events: none;
+  z-index: 1;
+  font-weight: bold;
+}
+.u2-carousel .u-carousel_images::after {
+  content: "";
+  justify-content: flex-end;
+  right: 0;
+  background: linear-gradient(270deg, #0000004d, #00000000);
+}
+.u2-carousel .u-carousel_images:hover::before,
+.u2-carousel .u-carousel_images:hover::after {
+  opacity: 1;
+}
+/* Счётчик */
+.u2-carousel.counter {
+  counter-reset: carousel carousel-current;
+}
+.u2-carousel.counter .u-carousel_images > div {
+  counter-increment: carousel carousel-current;
+}
+.u2-carousel.counter .u-carousel_images > .active ~ div {
+  counter-increment: carousel carousel-current 0;
+}
+
+.u2-carousel.counter::after {
+  content: counter(carousel-current) " из " counter(carousel);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2em;
+  padding: 0.36em 1em;
+  background-color: #00000066;
+  border-radius: 5px;
+  color: #eee;
+  backface-visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .u2-carousel {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 600px) {
+  .u2-carousel {
+    width: calc(100% / 1);
+  }
+}
+
+.u2-carousel .active > .b-image:after,
+.u2-carousel .active > .b-poster:after {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1rem 0.58rem;
+  line-height: 1;
+  font-size: 1.35em;
+  color: #f0f8ff;
+  pointer-events: none;
+  text-shadow: 1px 0 2px #000000bf, -1px 0 2px #000000bf, 0 1px 2px #000000bf, 0 -1px 2px #000000bf, 1px 0 2px #000000bf, -1px 0 2px #000000bf, 0 1px 2px #000000bf, 0 -1px 2px #000000bf;
+}
+
+@media screen and (max-width: 300px) {
+  .u2-carousel .active > .b-image:after,
+  .u2-carousel .active > .b-poster:after {
+    display: none;
+  }
+  .u2-carousel .u-carousel_images {
+    padding: 60% 0;
+  }
+}
+
+/*1-Ряд*/
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(1) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(1) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1281070.jpg") 71% 50% / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(2) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(2) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1281071.jpg") center / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(3) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(3) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1412320.jpg") center / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(4) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(4) > .b-image {
+  background: url("//dere.shikimori.one/system/user_images/original/208335/1412329.jpg") 55% center / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(5) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(5) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1332363.jpg") center / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(6) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(6) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332362.jpg") 22% 0 / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(7) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(7) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1332365.jpg") center / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(8) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(8) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1281078.jpg") 85% 0 / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(9) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(9) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332367.jpg") center / cover;
+}
+.u2-carousel:nth-child(1) .u-carousel_images > div:nth-child(10) > .b-image,
+.u2-carousel:nth-child(1) .u-carousel_images > .active:nth-child(10) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1332368.jpg") 48% 50% / cover;
+}
+/*2-Ряд*/
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(1) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(1) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1412301.jpg") 20% 50% / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(2) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(2) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1412356.jpg") center / 113%;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(3) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(3) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1412355.jpg") 48% 60% / 126%;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(4) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(4) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332372.jpg") center / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(5) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(5) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1287638.jpg") center / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(6) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(6) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1332373.jpg") 72% center / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(7) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(7) > .b-image {
+  background: url("//dere.shikimori.one/system/user_images/original/208335/1332374.jpg") 40% center / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(8) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(8) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1332376.jpg") center / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(9) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(9) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332377.jpg") center / cover;
+}
+.u2-carousel:nth-child(2) .u-carousel_images > div:nth-child(10) > .b-image,
+.u2-carousel:nth-child(2) .u-carousel_images > .active:nth-child(10) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1283921.jpg") 12% center / cover;
+}
+/*3-Ряд*/
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(1) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(1) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1412303.jpg") 15% center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(2) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(2) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332402.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(3) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(3) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1332403.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(4) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(4) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332417.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(5) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(5) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1332426.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(6) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(6) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1332430.jpg") 10% center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(7) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(7) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1332431.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(8) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(8) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332432.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(9) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(9) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1332433.jpg") center / cover;
+}
+.u2-carousel:nth-child(3) .u-carousel_images > div:nth-child(10) > .b-image,
+.u2-carousel:nth-child(3) .u-carousel_images > .active:nth-child(10) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1332435.jpg") center / cover;
+}
+/*4-Ряд*/
+.u2-carousel:nth-child(4) .u-carousel_images > div:nth-child(1) > .b-image,
+.u2-carousel:nth-child(4) .u-carousel_images > .active:nth-child(1) > .b-image {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1412300.jpg") center / cover;
+}
+.u2-carousel:nth-child(4) .u-carousel_images > div:nth-child(2) > .b-image,
+.u2-carousel:nth-child(4) .u-carousel_images > .active:nth-child(2) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332567.jpg") 95% center / cover;
+}
+.u2-carousel:nth-child(4) .u-carousel_images > div:nth-child(3) > .b-image,
+.u2-carousel:nth-child(4) .u-carousel_images > .active:nth-child(3) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1349791.jpg") center / 146%;
+}
+.u2-carousel:nth-child(4) .u-carousel_images > div:nth-child(4) > .b-image,
+.u2-carousel:nth-child(4) .u-carousel_images > .active:nth-child(4) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332572.jpg") 20% 10% / 140%;
+}
+.u2-carousel:nth-child(4) .u-carousel_images > div:nth-child(5) > .b-image,
+.u2-carousel:nth-child(4) .u-carousel_images > .active:nth-child(5) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1374266.jpg") center / 170%;
+}
+.u2-carousel:nth-child(4) .u-carousel_images > div:nth-child(6) > .b-image,
+.u2-carousel:nth-child(4) .u-carousel_images > .active:nth-child(6) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1332371.jpg") center / 170%;
+}
+/*5-Ряд*/
+.u2-carousel:nth-child(5) .u-carousel_images > div:nth-child(1) > .b-image,
+.u2-carousel:nth-child(5) .u-carousel_images > .active:nth-child(1) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1412318.jpg") center / cover;
+}
+.u2-carousel:nth-child(5) .u-carousel_images > div:nth-child(2) > .b-image,
+.u2-carousel:nth-child(5) .u-carousel_images > .active:nth-child(2) > .b-image {
+  background: url("//dere.shikimori.one/system/user_images/original/208335/1332579.jpg") center / cover;
+}
+.u2-carousel:nth-child(5) .u-carousel_images > div:nth-child(3) > .b-image,
+.u2-carousel:nth-child(5) .u-carousel_images > .active:nth-child(3) > .b-image {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1292013.jpg") 73% center / cover;
+}
+.u2-carousel:nth-child(5) .u-carousel_images > div:nth-child(4) > .b-image,
+.u2-carousel:nth-child(5) .u-carousel_images > .active:nth-child(4) > .b-image {
+  background: url("//kawai.shikimori.one/system/user_images/original/208335/1292066.jpg") 15% center / cover;
+}
+.u2-carousel:nth-child(5) .u-carousel_images > div:nth-child(5) > .b-image,
+.u2-carousel:nth-child(5) .u-carousel_images > .active:nth-child(5) > .b-image {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1332582.jpg") 20% center / cover;
+}
+
+.u2-carousel:nth-child(1) .active:nth-child(1) > .b-image:after {
+  content: "Рам / Рем";
+}
+.u2-carousel:nth-child(1) .active:nth-child(2) > .b-image:after {
+  content: "Инори";
+}
+.u2-carousel:nth-child(1) .active:nth-child(3) > .b-image:after {
+  content: "Сиро";
+}
+.u2-carousel:nth-child(1) .active:nth-child(4) > .b-image:after {
+  content: "Юкино";
+}
+.u2-carousel:nth-child(1) .active:nth-child(5) > .b-image:after {
+  content: "Курису";
+}
+.u2-carousel:nth-child(1) .active:nth-child(6) > .b-image:after {
+  content: "Луиза";
+}
+.u2-carousel:nth-child(1) .active:nth-child(7) > .b-image:after {
+  content: "Лиза";
+}
+.u2-carousel:nth-child(1) .active:nth-child(8) > .b-image:after {
+  content: "Риас";
+}
+.u2-carousel:nth-child(1) .active:nth-child(9) > .b-image:after {
+  content: "Юко";
+}
+.u2-carousel:nth-child(1) .active:nth-child(10) > .b-image:after {
+  content: "Юно";
+}
+
+.u2-carousel:nth-child(2) .active:nth-child(1) > .b-image:after {
+  content: "Аска";
+}
+.u2-carousel:nth-child(2) .active:nth-child(2) > .b-image:after {
+  content: "Мику";
+}
+.u2-carousel:nth-child(2) .active:nth-child(3) > .b-image:after {
+  content: "Нино";
+}
+.u2-carousel:nth-child(2) .active:nth-child(4) > .b-image:after {
+  content: "Маширо";
+}
+.u2-carousel:nth-child(2) .active:nth-child(5) > .b-image:after {
+  content: "Холо";
+}
+.u2-carousel:nth-child(2) .active:nth-child(6) > .b-image:after {
+  content: "Юи";
+}
+.u2-carousel:nth-child(2) .active:nth-child(7) > .b-image:after {
+  content: "Фреми";
+}
+.u2-carousel:nth-child(2) .active:nth-child(8) > .b-image:after {
+  content: "Синобу";
+}
+.u2-carousel:nth-child(2) .active:nth-child(9) > .b-image:after {
+  content: "Тайга";
+}
+.u2-carousel:nth-child(2) .active:nth-child(10) > .b-image:after {
+  content: "Микото";
+}
+
+.u2-carousel:nth-child(3) .active:nth-child(1) > .b-image:after {
+  content: "Каори";
+}
+.u2-carousel:nth-child(3) .active:nth-child(2) > .b-image:after {
+  content: "Цугуми";
+}
+.u2-carousel:nth-child(3) .active:nth-child(3) > .b-image:after {
+  content: "Хакён";
+}
+.u2-carousel:nth-child(3) .active:nth-child(4) > .b-image:after {
+  content: "Мэгумин";
+}
+.u2-carousel:nth-child(3) .active:nth-child(5) > .b-image:after {
+  content: "Элис";
+}
+.u2-carousel:nth-child(3) .active:nth-child(6) > .b-image:after {
+  content: "Микаса";
+}
+.u2-carousel:nth-child(3) .active:nth-child(7) > .b-image:after {
+  content: "Маи";
+}
+.u2-carousel:nth-child(3) .active:nth-child(8) > .b-image:after {
+  content: "Рори";
+}
+.u2-carousel:nth-child(3) .active:nth-child(9) > .b-image:after {
+  content: "Джувия";
+}
+.u2-carousel:nth-child(3) .active:nth-child(10) > .b-image:after {
+  content: "Неро";
+}
+
+.u2-carousel:nth-child(4) .active:nth-child(1) > .b-image:after {
+  content: "Аи Хаясака";
+}
+.u2-carousel:nth-child(4) .active:nth-child(2) > .b-image:after {
+  content: "Хитаги";
+}
+.u2-carousel:nth-child(4) .active:nth-child(3) > .b-image:after {
+  content: "Момо";
+}
+.u2-carousel:nth-child(4) .active:nth-child(4) > .b-image:after {
+  content: "Рикка";
+}
+.u2-carousel:nth-child(4) .active:nth-child(5) > .b-image:after {
+  content: "Альбедо";
+}
+
+.u2-carousel:nth-child(4) .active:nth-child(6) > .b-image:after {
+  content: "Тока";
+}
+.u2-carousel:nth-child(5) .active:nth-child(1) > .b-image:after {
+  content: "Зеро Ту";
+}
+.u2-carousel:nth-child(5) .active:nth-child(2) > .b-image:after {
+  content: "Мицуки";
+}
+.u2-carousel:nth-child(5) .active:nth-child(3) > .b-image:after {
+  content: "Риндо Кобаяси";
+}
+.u2-carousel:nth-child(5) .active:nth-child(4) > .b-image:after {
+  content: "Хината";
+}
+.u2-carousel:nth-child(5) .active:nth-child(5) > .b-image:after {
+  content: "Ханаби";
+}
+
+.u2-carousel .active > .b-image::before {
+  content: "";
+  z-index: 999;
+  position: absolute;
+  top: 8px;
+  left: -0.1rem;
+  padding: 8px 8px;
+  background: var(--color-primary, #6e1515);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.7);
+  color: var(--color-text-on-primary, #f5f8ff);
+  font-size: 13px;
+  line-height: 10px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.u2-carousel:nth-child(1) .active:nth-child(1) > .b-image::before {
+  content: "★★★★★";
+  opacity: 1;
+}
+.u2-carousel:nth-child(1) .active:nth-child(2) > .b-image::before {
+  content: "★★★";
+  opacity: 1;
+}
+.u2-carousel:nth-child(2) .active:nth-child(1) > .b-image::before {
+  content: "★★★★★";
+  opacity: 1;
+}
+.u2-carousel:nth-child(3) .active:nth-child(1) > .b-image::before {
+  content: "★★★★";
+  opacity: 1;
+}
+.u2-carousel:nth-child(4) .active:nth-child(1) > .b-image::before {
+  content: "★★★";
+  opacity: 1;
+}
+.u2-carousel:nth-child(5) .active:nth-child(1) > .b-image::before {
+  content: "★★";
+  opacity: 1;
+}
