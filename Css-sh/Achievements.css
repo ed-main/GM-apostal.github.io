@@ -29,7 +29,6 @@
   #profiles_show .b-achievement.is-badge:hover:before {
     border-radius: 16rem;
     padding-top: 0.25rem;
-    backdrop-filter: blur(4px);
   }
   #profiles_show .b-achievement.is-badge::before {
     top: 0;
