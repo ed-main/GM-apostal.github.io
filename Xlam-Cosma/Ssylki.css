@@ -1,0 +1,599 @@
+#profiles_show .tooltip-inner {
+  width: 340px;
+}
+#profiles_show  .b-catalog_entry-tooltip .image,
+#profiles_show  .b-catalog_entry-tooltip > a {
+  display: none;
+}
+#profiles_show  .b-catalog_entry-tooltip .inner.offset {
+  margin-left: 0;
+}
+
+
+             /*Можно и так подключить картинку*/
+   /*.Ssylki-anime:nth-child(1) > strong:nth-child(1) > a {*/
+
+.Ssylki-0 {
+   position: relative;
+   margin: 5px 5px 5px 2px;
+}
+.Ssylki-anime {
+   display: inline-flex;
+   width: calc(100% / 6);
+   vertical-align: top;
+   height: 100%;
+   padding: 6px 6px 6px 8px;
+   transition: 0s ease, transform 0.3s ease;
+   overflow: hidden;
+
+}
+div.Ssylki-anime:hover {
+   transform: translateY(-5px);
+
+}
+.Ssylki-anime .b-link {
+   position: absolute;
+   display: grid;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   min-height: 2.5rem;
+   line-height: 1.45;
+   font-size: 15px;
+   padding: 0 1rem 0.65rem 1rem;
+   justify-content: center;
+   align-items: flex-end;
+   text-align: center;
+   overflow: hidden;
+   color: #ddd !important;
+   z-index: 15;
+   text-shadow: 1px 0 2px #000000cc, -1px 0 2px #000000cc, 0 1px 2px #000000cc, 0 -1px 2px #000000cc;
+   transition: opacity 0.3s ease-in-out;
+}
+div.Ssylki-anime:hover .b-link {
+   opacity: 0;
+}
+.Ssylki-anime strong::before {
+   content: "";
+   background: linear-gradient(1145deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   background-size: 600%;
+   z-index: -1;
+   filter: blur(2.8px);
+   animation: glowing 20s linear infinite;
+   transition: opacity 0.3s ease-in-out;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   opacity: 0;
+   border-radius: 0.5rem;
+}
+div.Ssylki-anime:hover strong::before {
+   opacity: 1;
+}
+@keyframes glowing {
+   0% {
+      background-position: 0 0;
+   }
+   50% {
+      background-position: 400% 0;
+   }
+   100% {
+      background-position: 0 0;
+   }
+}
+.Ssylki-anime strong {
+   width: 100%;
+   border-radius: 0.5rem;
+   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2);
+   background: rgba(var(--block-color), 0.24);
+   position: relative;
+   z-index: 5;
+   display: block;
+   padding-bottom: 60%;
+}
+div.Ssylki-anime:hover .Evaluation {
+   opacity: 0;
+}
+.Ssylki-anime .Evaluation {
+   position: absolute;
+   padding: 6px 8px;
+   border-radius: 0 5px 5px 0;
+   font-size: 14px;
+   line-height: 0.8;
+   pointer-events: none;
+   z-index: 8;
+   margin: 0.45rem 0 0 -0.5rem;
+   text-align: center;
+   background: #6e1515;
+   border-color: #6e1515;
+   box-shadow: 0 1px 2px 0 #00000038;
+   color: #d9c9e0;
+   text-shadow: 0 1px 2px #00000080;
+   transition: opacity 0.3s ease-in-out;
+}
+.Ssylki-anime .Evaluation::before {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 0;
+   border: 6.6px solid transparent;
+   border-top-color: inherit;
+   border-left-width: 8px;
+   border-right-width: 0px;
+   filter: brightness(0.6);
+   z-index: -1;
+}
+.Ssylki-anime strong:after {
+   content: "";
+   position: absolute;
+   width: calc(100% - 6px);
+   height: calc(100% - 6px);
+   right: 0;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   filter: contrast(102%) grayscale(5%);
+   margin: auto;
+   background-color: #333;
+   background-repeat: no-repeat;
+   background-position: 50% 20%;
+   background-size: cover;
+   border-radius: 0.5rem;
+   transition: filter 0.35s ease;
+   image-rendering: -webkit-optimize-contrast;
+}
+div.Ssylki-anime:hover strong:after {
+   filter: contrast(103%) grayscale(70%);
+}
+@media screen and (max-width: 1600px) {
+   .Ssylki-anime {
+      width: calc(100% / 5);
+   }
+}
+@media screen and (max-width: 1300px) {
+   .Ssylki-anime {
+      width: calc(100% / 4);
+   }
+}
+@media screen and (max-width: 1024px) {
+   .Ssylki-anime {
+      width: calc(100% / 3);
+   }
+}
+@media screen and (max-width: 700px) {
+   .Ssylki-anime {
+      width: calc(100% / 2);
+   }
+}
+@media screen and (max-width: 550px) {
+   .Ssylki-anime {
+      width: calc(100% / 1);
+   }
+}
+@media screen and (max-width: 248px) {
+   div.Ssylki-anime .b-link {
+      opacity: 0;
+   }
+}
+
+
+.Ssylki-anime:nth-child(1) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412703.jpg);}
+.Ssylki-anime:nth-child(2) > strong:after {background-image: url(//moe.shikimori.one/system/images/original/113442.gif?1614912709);}
+.Ssylki-anime:nth-child(3) > strong:after {background-image: url(//kawai.shikimori.one/system/images/original/113446.gif?1614954201);}
+.Ssylki-anime:nth-child(4) > strong:after {background-image: url(//moe.shikimori.one/system/images/original/113447.gif?1614954324);}
+.Ssylki-anime:nth-child(5) > strong:after {background-image: url(//kawai.shikimori.one/system/user_images/original/208335/1412736.jpg);}
+.Ssylki-anime:nth-child(6) > strong:after {background-image: url(//dere.shikimori.one/system/user_images/original/208335/1412739.jpg);}
+.Ssylki-anime:nth-child(7) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412743.jpg);}
+.Ssylki-anime:nth-child(8) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1333408.jpg);}
+.Ssylki-anime:nth-child(9) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412748.jpg);}
+.Ssylki-anime:nth-child(10) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412757.jpg);}
+.Ssylki-anime:nth-child(11) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412763.jpg);}
+.Ssylki-anime:nth-child(12) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412767.jpg);}
+.Ssylki-anime:nth-child(13) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412773.jpg);}
+.Ssylki-anime:nth-child(14) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412782.jpg);}
+.Ssylki-anime:nth-child(15) > strong:after {background-image: url(//kawai.shikimori.one/system/user_images/original/208335/1412791.jpg);}
+.Ssylki-anime:nth-child(16) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412793.jpg);}
+.Ssylki-anime:nth-child(17) > strong:after {background-image: url(//nyaa.shikimori.one/system/user_images/original/208335/1412795.jpg);}
+.Ssylki-anime:nth-child(18) > strong:after {background-image: url(//kawai.shikimori.one/system/user_images/original/208335/1412796.jpg);}
+.Ssylki-anime:nth-child(19) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412797.jpg);}
+.Ssylki-anime:nth-child(20) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412798.jpg);}
+.Ssylki-anime:nth-child(21) > strong:after {background-image: url(//nyaa.shikimori.one/system/user_images/original/208335/1412800.jpg);}
+
+
+
+
+              /*Можно и так подключить картинку*/
+   /*.Ssylki-manga:nth-child(1) > strong:nth-child(1) > a {*/
+
+.Ssylki-1 {
+   position: relative;
+   margin: 5px 5px 5px 2px;
+}
+.Ssylki-manga {
+   display: inline-flex;
+   width: calc(100% / 6);
+   vertical-align: top;
+   height: auto;
+   padding: 6px 6px 6px 8px;
+   overflow: hidden;
+   transition: 0s ease, transform 0.3s ease;
+}
+div.Ssylki-manga:hover {
+   transform: translateY(-5px);
+}
+.Ssylki-manga .b-link {
+   position: absolute;
+   display: grid;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   min-height: 2.5rem;
+   line-height: 1.45;
+   font-size: 15px;
+   padding: 0 1rem 0.65rem 1rem;
+   justify-content: center;
+   align-items: flex-end;
+   text-align: center;
+   overflow: hidden;
+   color: #ddd !important;
+   z-index: 15;
+   text-shadow: 1px 0 2px #000000cc, -1px 0 2px #000000cc, 0 1px 2px #000000cc, 0 -1px 2px #000000cc;
+   transition: opacity 0.3s ease-in-out;
+}
+div.Ssylki-manga:hover .b-link {
+   opacity: 0;
+}
+.Ssylki-manga strong::before {
+   content: "";
+   background: linear-gradient(1145deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   background-size: 600%;
+   z-index: -1;
+   filter: blur(2.8px);
+   animation: glowing 20s linear infinite;
+   transition: opacity 0.3s ease-in-out;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   opacity: 0;
+   border-radius: 0.5rem;
+}
+div.Ssylki-manga:hover strong::before {
+   opacity: 1;
+}
+@keyframes glowing {
+   0% {
+      background-position: 0 0;
+   }
+   50% {
+      background-position: 400% 0;
+   }
+   100% {
+      background-position: 0 0;
+   }
+}
+.Ssylki-manga strong {
+   width: 100%;
+   border-radius: 0.5rem;
+   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2);
+   background: rgba(var(--block-color), 0.24);
+   position: relative;
+   z-index: 5;
+   display: block;
+   padding-bottom: 60%;
+}
+div.Ssylki-manga:hover .Evaluation {
+   opacity: 0;
+}
+.Ssylki-manga .Evaluation {
+   position: absolute;
+   padding: 6px 8px;
+   border-radius: 0 5px 5px 0;
+   font-size: 14px;
+   line-height: 0.8;
+   pointer-events: none;
+   z-index: 8;
+   margin: 0.45rem 0 0 -0.5rem;
+   text-align: center;
+   background: #6e1515;
+   border-color: #6e1515;
+   box-shadow: 0 1px 2px 0 #00000038;
+   color: #d9c9e0;
+   text-shadow: 0 1px 2px #00000080;
+   transition: opacity 0.3s ease-in-out;
+}
+.Ssylki-manga .Evaluation::before {
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 0;
+   border: 6.6px solid transparent;
+   border-top-color: inherit;
+   border-left-width: 8px;
+   border-right-width: 0px;
+   filter: brightness(0.6);
+   z-index: -1;
+}
+.Ssylki-manga strong:after {
+   content: "";
+   position: absolute;
+   width: calc(100% - 6px);
+   height: calc(100% - 6px);
+   right: 0;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   filter: contrast(102%) grayscale(5%);
+   margin: auto;
+   background-color: #333;
+   background-repeat: no-repeat;
+   background-position: 50% 20%;
+   background-size: cover;
+   border-radius: 0.5rem;
+   image-rendering: -webkit-optimize-contrast;
+   transition: filter 0.35s ease;
+}
+div.Ssylki-manga:hover strong:after {
+   filter: contrast(103%) grayscale(70%);
+}
+@media screen and (max-width: 1600px) {
+   .Ssylki-manga {
+      width: calc(100% / 5);
+   }
+}
+@media screen and (max-width: 1300px) {
+   .Ssylki-manga {
+      width: calc(100% / 4);
+   }
+}
+@media screen and (max-width: 1024px) {
+   .Ssylki-manga {
+      width: calc(100% / 3);
+   }
+}
+@media screen and (max-width: 700px) {
+   .Ssylki-manga {
+      width: calc(100% / 2);
+   }
+}
+@media screen and (max-width: 550px) {
+   .Ssylki-manga {
+      width: calc(100% / 1);
+   }
+}
+@media screen and (max-width: 248px) {
+   div.Ssylki-manga .b-link {
+      opacity: 0;
+   }
+}
+
+
+
+.Ssylki-manga:nth-child(1) > strong:after {background-image: url(//dere.shikimori.one/system/user_images/original/208335/1412819.jpg);}
+.Ssylki-manga:nth-child(2) > strong:after {background-image: url(//dere.shikimori.one/system/user_images/original/208335/1412824.jpg);}
+.Ssylki-manga:nth-child(3) > strong:after {background-image: url(//nyaa.shikimori.one/system/user_images/original/208335/1412825.jpg);}
+.Ssylki-manga:nth-child(4) > strong:after {background-image: url(//kawai.shikimori.one/system/user_images/original/208335/1412826.jpg);}
+.Ssylki-manga:nth-child(5) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412827.jpg);}
+.Ssylki-manga:nth-child(6) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412828.jpg);}
+.Ssylki-manga:nth-child(7) > strong:after {background-image: url(//desu.shikimori.one/system/images/original/113448.gif?1614956442);}
+.Ssylki-manga:nth-child(8) > strong:after {background-image: url(//kawai.shikimori.one/system/user_images/original/208335/1412831.jpg);}
+.Ssylki-manga:nth-child(9) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412832.jpg);}
+.Ssylki-manga:nth-child(10) > strong:after {background-image: url(//desu.shikimori.one/system/user_images/original/208335/1412833.jpg);}
+.Ssylki-manga:nth-child(11) > strong:after {background-image: url(//dere.shikimori.one/system/user_images/original/208335/1412834.jpg);}
+.Ssylki-manga:nth-child(12) > strong:after {background-image: url(//kawai.shikimori.one/system/user_images/original/208335/1412836.jpg);}
+.Ssylki-manga:nth-child(13) > strong:after {background-image: url(//moe.shikimori.one/system/user_images/original/208335/1412837.jpg);}
+
+
+
+
+.magnet {
+   margin-top: 1.5rem;
+   margin-bottom: 1.5%;
+}
+.Ssylki-Characters,
+.Ssylki-Characters strong,
+.Ssylki-Characters strong:after {
+   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+.Ssylki-3 {
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+   max-width: 1400px;
+   pointer-events: none;
+   margin: auto;
+}
+.Ssylki-Characters {
+   display: inline-flex;
+   width: calc(100% / 7);
+   vertical-align: top;
+   height: auto;
+   overflow: hidden;
+   padding: 0.7%;
+   margin: -1.6% -0.5% -1.6% -0.5%;
+   background-color: rgba(var(--block-color), 0.4);
+   background: url(/\x/dere.shikimori.one/system/images/original/113449.gif?1614959521);
+   background-size: contain;
+   pointer-events: all;
+   transform: rotate(360deg);
+   transition: 0s ease, transform 0.3s ease, background 0.3s ease;
+}
+div.Ssylki-Characters:hover {
+   transform: rotate(-360deg);
+   background: url(/\x/dere.shikimori.one/system/images/original/111569.gif?1610135594);
+}
+.Ssylki-Characters .b-link {
+   position: absolute;
+   display: grid;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   min-height: 2.5rem;
+   line-height: 1.45;
+   font-size: 20px;
+   padding: 0 2rem 0 2rem;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #f58ebb !important;
+   z-index: 15;
+   text-shadow: 1px 0 2px #000000cc, -1px 0 2px #000000cc, 0 1px 2px #000000cc, 0 -1px 2px #000000cc;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0;
+}
+div.Ssylki-Characters:hover .b-link {
+   opacity: 1;
+}
+.Ssylki-Characters .b-link:after {
+   position: absolute;
+   content: url("/\x/i.ibb.co/tD9K2Lq/Dno-fon.jpg");
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100.75%;
+   height: 100.75%;
+   margin: auto;
+   filter: blur(4px);
+   z-index: -1;
+   opacity: 0.9;
+}
+.Ssylki-Characters strong {
+   position: relative;
+   display: block;
+   width: 100%;
+   padding-bottom: 100%;
+   z-index: 5;
+   overflow: hidden;
+}
+.Ssylki-Characters strong:after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+   filter: contrast(102%);
+   background-color: #333;
+   background-repeat: no-repeat !important;
+   image-rendering: -webkit-optimize-contrast;
+}
+@media screen and (max-width: 1024px) {
+ .Ssylki-Characters .b-link {
+   visibility: hidden;
+  }
+  .Ssylki-Characters .b-link:after {
+   visibility: visible; 
+}}
+
+.Ssylki-3:nth-child(1) .Ssylki-Characters:nth-child(1) > strong:after {
+  background: url("//moe.shikimori.one/system/images/original/113452.gif?1614961166") 50% / cover;
+}
+.Ssylki-3:nth-child(1) .Ssylki-Characters:nth-child(2) > strong:after {
+  background: url("//nyaa.shikimori.one/system/user_images/original/208335/1333585.jpg") 65% 67%/ 120%;
+}
+.Ssylki-3:nth-child(1) .Ssylki-Characters:nth-child(3) > strong:after {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1333603.jpg") 35% 0 / 120%;
+}
+.Ssylki-3:nth-child(1) .Ssylki-Characters:nth-child(4) > strong:after {
+  background: url("//desu.shikimori.one/system/user_images/original/208335/1333618.jpg") 50% 30% / 150%;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(1) > strong:after {
+  background: url("//desu.shikimori.one/system/user_images/original/274756/1085318.jpg") 37% 7% / 200%;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(2) > strong:after {
+  background: url("//dere.shikimori.one/system/user_images/original/274756/1416779.jpg") 70% 10% / 175%;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(3) > strong:after {
+  background: url("//dere.shikimori.one/system/user_images/original/208335/1333694.jpg") 20% 10% / 120%;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(4) > strong:after {
+  background: url(//moe.shikimori.one/system/user_images/original/208335/617752.jpg) center / cover;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(5) > strong:after {
+  background: url("//moe.shikimori.one/system/user_images/original/208335/1412917.jpg") center / cover;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(6) > strong:after {
+  background: url(//nyaa.shikimori.one/system/images/original/113450.gif?1614960582) center / cover;
+}
+.Ssylki-3:nth-child(2) .Ssylki-Characters:nth-child(7) > strong:after {
+  background: url(//kawai.shikimori.one/system/user_images/original/208335/848196.jpg) center / cover;
+}
+.Ssylki-3:nth-child(3) .Ssylki-Characters:nth-child(1) > strong:after {
+  background: url(//nyaa.shikimori.one/system/user_images/original/208335/617755.jpg) center 0 / cover;
+}
+.Ssylki-3:nth-child(3) .Ssylki-Characters:nth-child(2) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/1129938.jpg) 57% 10% / 550%;
+}
+.Ssylki-3:nth-child(3) .Ssylki-Characters:nth-child(3) > strong:after {
+  background: url(//moe.shikimori.one/system/user_images/original/208335/1335002.jpg) center / cover;
+}
+.Ssylki-3:nth-child(3) .Ssylki-Characters:nth-child(4) > strong:after {
+  background: url(//kawai.shikimori.one/system/user_images/original/208335/1333636.jpg) 48% 80% / 200%;
+}
+.Ssylki-3:nth-child(3) .Ssylki-Characters:nth-child(5) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/1334998.jpg) center / cover;
+}
+.Ssylki-3:nth-child(3) .Ssylki-Characters:nth-child(6) > strong:after {
+  background: url(//dere.shikimori.one/system/user_images/original/208335/1334999.jpg) 60% 0% / 136%;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(1) > strong:after {
+  background: url(//kawai.shikimori.one/system/user_images/original/208335/1333896.jpg) center / cover;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(2) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/1333768.jpg) center 10% / 150%;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(3) > strong:after {
+  background: url(//nyaa.shikimori.one/system/images/original/113530.gif?1615266538) center / cover;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(4) > strong:after {
+  background: url(//nyaa.shikimori.one/system/user_images/original/208335/1333735.jpg) 65% 10% / 250%;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(5) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/1333713.jpg) center / cover;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(6) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/799763.jpg) 53% 42%/ 500%;
+}
+.Ssylki-3:nth-child(4) .Ssylki-Characters:nth-child(7) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/823708.jpg) 48% 8% / 200%;
+}
+.Ssylki-3:nth-child(5) .Ssylki-Characters:nth-child(1) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/1333783.jpg) center 0 / cover;
+}
+.Ssylki-3:nth-child(5) .Ssylki-Characters:nth-child(2) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/675823.jpg) center / cover;
+}
+.Ssylki-3:nth-child(5) .Ssylki-Characters:nth-child(3) > strong:after {
+  background: url(//kawai.shikimori.one/system/images/original/113531.gif?1615267510) center / cover;
+}
+.Ssylki-3:nth-child(5) .Ssylki-Characters:nth-child(4) > strong:after {
+  background: url(//desu.shikimori.one/system/user_images/original/208335/706858.jpg) center / cover;
+}
+.Ssylki-3:nth-child(5) .Ssylki-Characters:nth-child(5) > strong:after {
+  background: url(//nyaa.shikimori.one/system/user_images/original/208335/1333670.jpg) center / cover;
+}
+.Ssylki-3:nth-child(5) .Ssylki-Characters:nth-child(6) > strong:after {
+  background: url(//kawai.shikimori.one/system/user_images/original/208335/675826.jpg) 40% 10% / 150%;
+}
+.Ssylki-3:nth-child(6) .Ssylki-Characters:nth-child(1) > strong:after {
+  background: url(//dere.shikimori.one/system/images/original/113424.gif?1614879543) center / cover;
+}
+.Ssylki-3:nth-child(6) .Ssylki-Characters:nth-child(2) > strong:after {
+  background: url(//dere.shikimori.one/system/user_images/original/208335/1129959.jpg) 0% 70% / 110%;
+}
+.Ssylki-3:nth-child(6) .Ssylki-Characters:nth-child(3) > strong:after {
+  background: url(//kawai.shikimori.one/system/user_images/original/208335/1333851.jpg) center / cover;
+}
+.Ssylki-3:nth-child(6) .Ssylki-Characters:nth-child(4) > strong:after {
+  background: url(//kawai.shikimori.one/system/user_images/original/208335/1159911.jpg) 0 75% / 115%;
+}
+.Ssylki-3:nth-child(6) .Ssylki-Characters:nth-child(5) > strong:after {
+  background: url(//dere.shikimori.one/system/user_images/original/208335/1334924.jpg) 65% 15% / 150%;
+}
