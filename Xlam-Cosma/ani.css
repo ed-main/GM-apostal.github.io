@@ -1,42 +1,40 @@
 .ani {
-    display: inline-block;
-    margin: 0 0.4% 0.4% 0.4%;
-    overflow: hidden;
-    padding: 0.7rem;
-    max-width: 780px;
-    border-radius: 0 0 0.25rem 0.25rem;
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.5);
-    border: 0.25rem solid;
-    border-color: rgb(55 55 55) rgb(45 45 45) rgb(55 55 55);
-    background: rgb(19 19 19) url(//moe.shikimori.one/system/user_images/original/208335/1409292.jpg) no-repeat 0 50% / cover;
+  display: inline-block;
+  margin: 0 0.4% 0.4% 0.4%;
+  overflow: hidden;
+  padding: 0.7rem;
+  max-width: 780px;
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 2px 6px 2px #00000080;
+  border: 0.25rem solid;
+  border-color: #373737 #2d2d2d #373737;
+  background: #131313 url(//moe.shikimori.one/system/user_images/original/208335/1409292.jpg) no-repeat 0 50% / cover;
 }
 .ani_sid {
-    display: block;
-    float: left;
-    height: 100%;
-    border-right: 3px solid rgb(55 55 55);
-    padding: 0.75rem 1.75rem 0.75rem 0.9375rem;
-    margin-right: 1.25rem;
-    line-height: 3;
-    padding-bottom: 1.5625rem;
+  display: block;
+  float: left;
+  height: 100%;
+  border-right: 3px solid #373737;
+  padding: 0.75rem 1.75rem 0.75rem 0.9375rem;
+  margin-right: 1.25rem;
+  line-height: 3;
+  padding-bottom: 1.5625rem;
 }
-
 .ani .b-image,
 .ani img.b-poster {
-    vertical-align: text-top;
-    border-radius: 0.25rem;
-    border: 0.2rem solid !important;
-    border-color: rgb(55 55 55) rgb(45 45 45) rgb(55 55 55)!important;
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3) !important;
+  vertical-align: text-top;
+  border-radius: 0.25rem;
+  border: 0.2rem solid !important;
+  border-color: #373737 #2d2d2d #373737 !important;
+  box-shadow: 0 2px 6px 2px #0000004d !important;
 }
-
 .ani .b-image img,
 .ani img.b-poster {
-    object-fit: cover;
-    height: 270px !important;
-    min-width: 200px !important;
-    max-width: 200px !important;
-    transition: 0.35s all;
+  object-fit: cover;
+  height: 270px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
+  transition: 0.35s all;
 }
 .ani:nth-child(1) .b-image img,
 .ani:nth-child(1) img.b-poster {
@@ -48,201 +46,190 @@
 }
 .ani .b-image .normalized_width,
 .ani img.normalized_width {
-    max-width: 100% !important;
+  max-width: 100% !important;
 }
-
 .ani .b-image .normalized_height,
 .ani img.normalized_height {
-    max-height: 270px !important;
+  max-height: 270px !important;
 }
-
 .ani .b-image img:hover,
 .ani img.b-poster:hover {
-    transform: scale(1.08);
-   filter: blur(3px);
+  transform: scale(1.08);
+  filter: blur(3px);
 }
 .finom-1 {
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: #faebd7;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #b8b8b8;
 }
-
 .finom-2 {
-    display: grid;
-    text-align: initial;
-    position: relative;
-    left: 1rem;
-    color: #adf;
-    font-size: 0.9rem;
+  display: grid;
+  text-align: initial;
+  position: relative;
+  left: 1rem;
+  color: #adf;
+  font-size: 0.9rem;
 }
-
 .finom-3 {
-    position: relative;
-    color: #b3b0ae;
-    font-size: 14px;
-    top: 1.45rem;
-    display: grid;
-    height: 45px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    text-shadow: 0 1px 2px #000000;
-    
+  position: relative;
+  color: #b3b0ae;
+  font-size: 14px;
+  top: 1.45rem;
+  display: grid;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-shadow: 0 1px 2px #000000;
 }
-
 .finom-4 {
-    position: relative;
-    font-size: 13px;
-    display: grid;
-    text-align: center;
-    padding: 0.3125rem 0.3125rem 0.3125rem 0.75rem;
-    border-radius: 0.25rem;
-    top: 0.5rem;
-    max-height: 195px;
-    overflow-x: hidden;
-    background: linear-gradient(to right, #373737, #444343, #373737);
-    text-shadow: 0 1px 2px #00000080;
-    color: rgba(var(--light-color), var(--hundred));;
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-size: 13px;
+  display: grid;
+  text-align: center;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0.75rem;
+  border-radius: 0.25rem;
+  top: 0.5rem;
+  max-height: 195px;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #373737, #444343d9, #373737);
+  text-shadow: 0 1px 2px #00000080;
+  color: #b3b0ae;
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
 }
-
 .finom-5 {
-    display: list-item;
-    position: relative;
-    left: 1rem;
-    top: 0.2rem;
-    margin: 1.5rem 0 0 15.375rem;
-    color: #de956a;
-    text-align: initial;
-    font-size: 0.82rem;
-    text-shadow: 0 1px 2px #000000;
+  display: list-item;
+  position: relative;
+  left: 1rem;
+  top: 0.2rem;
+  margin: 1.5rem 0 0 15.375rem;
+  color: #de956a;
+  text-align: initial;
+  font-size: 0.82rem;
+  text-shadow: 0 1px 2px #000000;
 }
-
 .finom-6 {
-    position: relative;
-    color: #ccbcb2;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    text-align: center;
-    justify-content: center;
-    max-height: 9.375rem;
-    overflow-x: hidden;
-    display: grid;
-    padding: 0.3125rem 1.3125rem 0.3125rem 0.75rem;
-    border-radius: 4px;
-    background: linear-gradient(to right, #373737, #444343, #373737);
-    text-shadow: 0 1px 2px #00000080;
-    color: rgba(var(--light-color), var(--hundred));
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.3);
-    float: left;
-    width: calc(100% - 18%);
-    height: 52px;
-    align-items: center;
+  position: relative;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+  max-height: 9.375rem;
+  overflow-x: hidden;
+  display: grid;
+  padding: 0.3125rem 1.3125rem 0.3125rem 0.75rem;
+  border-radius: 4px;
+  background: linear-gradient(to right, #373737, #444343, #373737);
+  text-shadow: 0 1px 2px #00000080;
+  box-shadow: 0 2px 6px 2px #0000004d;
+  color: #b3b0ae;
+  float: left;
+  width: calc(100% - 18%);
+  height: 52px;
+  align-items: center;
 }
-
 .finom-7 {
-    position: relative;
-    left: 0.8rem;
-    color: rgba(var(--light-color), var(--hundred));
-    font-size: 0.8rem;
-    display: flex;
-    width: 13.6%;
-    padding: 0.3125rem 0rem 0.3125rem 0.75rem;
-    border-radius: 4px;
-    background: linear-gradient(to right, #373737, #444343, #373737);
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.15);
-    border: 0.2rem solid;
-    border-color: #373737 #2d2d2d #373737;
-    float: right;
-    justify-content: center;
-    margin-top: 1.5rem;
+  position: relative;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  display: flex;
+  width: 13.6%;
+  padding: 0.3125rem 0rem 0.3125rem 0.75rem;
+  border-radius: 4px;
+  border: 0.2rem solid;
+  background: linear-gradient(to right, #373737, #444343, #373737);
+  border-color: #373737 #2d2d2d #373737;
+  box-shadow: 0 2px 6px 2px #00000026;
+  color: #b3b0ae;
+  float: right;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 .finom-8 {
-    position: relative;
-    float: right;
-    background: #414040;
-    height: 50px;
-    width: 50px;
-    border-radius: 100px;
-    bottom: 0.5rem;
-    display: flex;
-    line-height: normal;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.2);
-    text-shadow: 0 1px 2px #00000080;
-    border: 0.2rem solid;
-    border-color: #505050 #2d2d2d #505050;
-    margin-top: 1.5rem;
-    margin-right: -2rem;
+  position: relative;
+  float: right;
+  background: #414040;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  bottom: 0.5rem;
+  display: flex;
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid;
+  border-color: #505050 #2d2d2d #505050;
+  box-shadow: 0 2px 4px 1px #00000033;
+  text-shadow: 0 1px 2px #00000080;
+  margin-top: 1.5rem;
+  margin-right: -2rem;
 }
-
 .ani_sid .b-image::before {
-    position: absolute;
-    display: block;
-    content: "★";
-    right: 0;
-    padding-bottom: 1.6875rem;
-    bottom: 0;
-    z-index: 1;
-    font-size: 33px;
-    width: 65px;
-    height: 55px;
-    background: linear-gradient(135deg, transparent 65px, #2d2d2d 0);
-    line-height: 4;
-    text-align: right;
-    padding-right: 0.3125rem;
-    color: #c9dc36d9;
-    font-weight: bold;
-    pointer-events: none;
+  position: absolute;
+  display: block;
+  content: "★";
+  right: 0;
+  padding-bottom: 1.6875rem;
+  bottom: 0;
+  z-index: 1;
+  font-size: 33px;
+  width: 65px;
+  height: 55px;
+  background: linear-gradient(135deg, transparent 65px, #2d2d2d 0);
+  line-height: 4;
+  text-align: right;
+  padding-right: 0.3125rem;
+  color: #c9dc36d9;
+  font-weight: bold;
+  pointer-events: none;
 }
 
 .ani_sid .b-image .marker {
-    right: auto;
-    left: 0.3125rem;
+  right: auto;
+  left: 0.3125rem;
 }
 .ani_sid .b-image::after {
-    position: absolute;
-    display: block;
-    content: 'перети на сайт';
-    top: 0rem;
-    right: 0;
-    left: 0;
-    opacity: 0;
-    background: rgb(45 45 45);
-    color: #afafaf;
-    padding: 0.74rem;
-    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.3);
-    pointer-events: none;
-    transition: opacity 0.35s ease;
-    -webkit-transition: opacity 0.35s ease;
+  position: absolute;
+  display: block;
+  content: "перети на сайт";
+  top: 0rem;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background: rgb(45 45 45);
+  color: #afafaf;
+  padding: 0.74rem;
+  box-shadow: 0 2px 4px 1px #0000004d;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  -webkit-transition: opacity 0.35s ease;
 }
 .ani_sid .b-image:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 @media screen and (max-width: 767px) {
-    .ani_sid {
-        display: flex;
-        float: none;
-        border-bottom: 3px solid #2d2d2d;
-        border-right: none;
-        padding: 0.8rem 1rem 1.5rem 1rem;
-        justify-content: center;
-        margin-right: 0;
-        margin-bottom: 0.9375rem;
-    }
-    .finom-5 {
-        margin-left: 0.3125rem;
-    }
-    .finom-4 {
-        max-height: 12.5rem;
-    }
-    .finom-7,
-    .finom-8 {
-        display: none;
-    }
-    .finom-6 {
-        width: 100%;
-    }
+  .ani_sid {
+    display: flex;
+    float: none;
+    border-bottom: 3px solid #2d2d2d;
+    border-right: none;
+    padding: 0.8rem 1rem 1.5rem 1rem;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 0.9375rem;
+  }
+  .finom-5 {
+    margin-left: 0.3125rem;
+  }
+  .finom-4 {
+    max-height: 12.5rem;
+  }
+  .finom-7,
+  .finom-8 {
+    display: none;
+  }
+  .finom-6 {
+    width: 100%;
+  }
 }
